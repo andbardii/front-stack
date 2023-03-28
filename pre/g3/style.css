@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.main-section{
+    padding: 20px;
+}
+.image-container{
+    height: 500px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Riviera5terre.JPG/520px-Riviera5terre.JPG);
+    background-size: cover;
+}
+h1{
+    font-family: 'Prata', serif;
+    font-size: 64px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+h3{
+    font-family: 'Prata', serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+h6{
+    padding: 22px;
+    margin-bottom: 0;
+    margin-top: 56px;
+    color: white;
+    background-image: linear-gradient(to right, darkblue, #a3b6d2);
+}
+.autore{
+    font-weight: 600;
+    font-style: italic;
+}
+.correlati{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    border-bottom: 1px;
+    border-color: #dfdfdf;
+    text-decoration: none;
+    color: black;
+}
+.correlati:visited{
+    color: darkblue;
+}
+footer{
+    background-color: black;
+    padding: 16px;
+}
+#footer{
+    color: white;
+}
+#footer:visited{
+    color: white;
+}

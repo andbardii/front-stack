@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        
+        <title>Frontend Basics</title>
+    </head>
+
+    <body>
+    <!-- HEADER -->
+        <div class="header">
+            <h2>PlayMusic.com</h2>
+        </div>
+    <hr size="1px" color="white" width="100%">
+    <!-- MAIN -->
+        <div class="main">
+            <p id="payoff">
+                Iscriviti al nostro servizio premium<br>ed accedi ad una miriade di vantaggi unici<br>solo su PlayMusic.com 
+            </p>
+            <div id="container">
+                <form onsubmit="alert('Grazie! la registrazione è stata inviata, controlla la tua mail!')">
+                    <input type="text" placeholder="Nome" required><br>
+                    <input type="text" placeholder="Cognome" required><br>
+                    <input type="email" placeholder="Email" required><br>
+                    <input type="password" placeholder="Password" required><br>
+                    <input type="date" required><br>
+                    <input type="number" placeholder="Cellulare" required><br>
+                    <div id="condizioni"><input type="radio" required> <span>Accetto i termini e le <br> condizioni di PlayMusic.com</span></div><br>
+                    <p>Che musica preferisci?</p>
+                    <input type="checkbox" id="genere1" name="genere1" value="MusicaRap">
+                    <label for="genere1">Musica Rap</label><br>
+                    <input type="checkbox" id="genere2" name="genere2" value="MusicaClassica">
+                    <label for="genere1">Musica Classica</label><br>
+                    <input type="checkbox" id="genere3" name="genere3" value="MusicaPop">
+                    <label for="genere1">Musica Pop</label><br>
+                    <input type="checkbox" id="genere4" name="genere4" value="MusicaJaz">
+                    <label for="genere1">Musica Jaz</label><br><br>
+                    <button type="submit">Invia registrazione!</button>
+                </form>
+            </div>
+        </div>
+    <!-- FOOTER -->
+    <hr size="1px" color="white" width="100%">
+        <div class="footer">
+            <p>Iscriviti subuto e ottieni un 15% DI SCONTO!</p>
+            <p>Tutta la musica che vuoi, dove e quando vuoi!</p>
+        </div>
+    
+    </body>
+</html>
