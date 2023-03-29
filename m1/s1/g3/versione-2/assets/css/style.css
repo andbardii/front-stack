@@ -1,3 +1,9 @@
+img{
+    max-width: 100%;
+}
+figure{
+    margin: 0;
+}
 #main-header{
     text-align: center;
 }
@@ -6,6 +12,10 @@
     border-top: 1px solid orange;
     padding: 15px 0;
 }
-#logocontainer img{
-    
+.content{
+    margin: 0 auto;
+    width: 800px;
+}
+#logo-container img{
+    width: 200px;
 }
