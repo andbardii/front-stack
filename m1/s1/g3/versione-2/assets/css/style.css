@@ -1,5 +1,9 @@
+figcaption{
+    text-align: center;
+}
 img{
     max-width: 100%;
+    border-radius: 2%;
 }
 figure{
     margin: 0;
@@ -16,6 +20,7 @@ figure{
     margin: 0 auto;
     width: 800px;
 }
-#logo-container img{
-    width: 200px;
+.bottom-title{
+    border-bottom: 1px solid blue;
+
 }
