@@ -15,6 +15,9 @@ main{
     border-top: 1px outset yellow;
     color: #0b5f5f;
     width: 100em;
+    display: flex;
+    justify-content: center;
+    padding: 0;
 }
 .lefttxt{
     text-align: left;
@@ -25,9 +28,15 @@ main{
 .feat{
     width: 35em;
     height: 2em;
-    border-left: 1px outset yellow;
+    border-left: 2px outset yellow;
     padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: left;
+}
+#link{
+    margin-top: 0;
 }
 .title{
     font-size: 32px;
