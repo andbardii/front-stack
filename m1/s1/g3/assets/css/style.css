@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main{
+    width: 40em;
+    display: flex;
+    flex-direction: column;
+}
+#subtitle{
+    background-color: rgba(255, 235, 204, 0.3);
+    border-top: 1px outset yellow;
+    color: #0b5f5f;
+    align-items: center;
+}
+.lefttxt{
+    text-align: left;
+}
+#credit{
+    color: grey;
+}
+.feat{
+    width: 35em;
+    height: 2em;
+    border-left: 1px outset yellow;
+    padding: 1em;
+}
+.title{
+    font-size: 32px;
+    border-bottom: 1px outset rgba(129, 224, 255, 0.5);
+}
+#orange{
+    color: orangered;
+}
+a{
+    color: darkcyan;
+}
+a:visited{
+    color: darkcyan;
+}
+
+
+
+
+
+
+
