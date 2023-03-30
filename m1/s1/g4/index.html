@@ -30,8 +30,8 @@
 
     <main id="corpo">
         <h1>Come creare un template per i post</h1>
-            <p id="subtitle"><i class="fa-solid fa-square-pen"></i>di <a href="https://it.wikipedia.org/wiki/Mario_Rossi">Mario Rossi</a> - <i class="fa-solid fa-clock"></i> pubblicato il 25-10-2020</p>
-            <p>La prima cosa da fare sarà suddividere in blocchi logici la pagina, identificando le parti comunida applicare a tutte le pagine.</p>
+            <p id="subtitle"><i class="fas fa-pen-square"></i> di <a href="https://it.wikipedia.org/wiki/Mario_Rossi">Mario Rossi</a> - <i class="fas fa-clock"></i> pubblicato il 25-10-2020</p>
+            <p>La prima cosa da fare sarà suddividere in blocchi logici la pagina, identificando le <b class="fuchsia">parti comuni</b> da applicare a tutte le pagine.</p>
             
             <section>
                 <p>Le varie aree saranno quindi suddivise in</p>
@@ -44,18 +44,70 @@
 
             <section>
                 <p>Formattazione del codice.</p>
-                <p>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare con CSS. Perciò i passi sarano:</p>
+                <p>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da <b class="fuchsia">selezionare con CSS</b>. Perciò i passi sarano:</p>
                 <ol>
                     <li>Progettare il markup assegnando ad ogni specifico testo il tag appropriato;</li>
                     <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso;</li>
                     <li>Applicare gli stili CSS;</li>
                 </ol>
             </section>
+            <section>
+                <p>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressochè totale.</p>
+                <table>
+                    <caption>Diffusione dei CSS</caption>
+                        <thead>
+                            <tr>
+                                <th>Anno</th>
+                                <th>% di utilizzo</th>
+                                <th>Supporto browsers</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2000</td>
+                                <td>20%</td>
+                                <td>17%</td>
+                            </tr>
+                            <tr>
+                                <td>2002</td>
+                                <td>35%</td>
+                                <td>22%</td>
+                            </tr>
+                            <tr>
+                                <td>2004</td>
+                                <td>45%</td>
+                                <td>42%</td>
+                            </tr>
+                            <tr>
+                                <td>2008</td>
+                                <td>80%</td>
+                                <td>51%</td>
+                            </tr>
+                            <tr>
+                                <td>2012</td>
+                                <td>100%</td>
+                                <td>76%</td>
+                            </tr>
+                        </tbody>
+                </table>
+            </section>
+
+            <section>
+                <p>Un test di validazione potrà essere fatto tramite il <a id="tool-link" href="https://forum.html.it/forum/showthread.php?threadid=726349">tool online</a> dedicato allo scopo. Una volta ottimizzato il tutto, avremo raggiunto il nostro obbiettivo ed essere stati dei veri developers come loro:</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LN6byzKojZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div id="form">
+                    <p>Vuoi rimanere aggiornato sulle altre novità del blog? Iscriviti alla nostra newsletter:</p>
+                    <form onsubmit="alert('Grazie per esserti iscritto alla nostra newsletter!')">
+                        <input type="email" required placeholder="inserisci l'email">
+                        <button type="submit">Iscriviti!</button>
+                    </form>
+                </div>
+            </section>
     </main>
 
     <footer id="foot">
         <p>Blog Epicode &copy;2023</p>
-        <p>Testata online di Mario Rossi, registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA 000112233.<a href="mailto:info@epicode.school">info@epicode.school</a></p>
+        <p>Testata online di Mario Rossi, registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA 000112233. <a href="mailto:info@epicode.school">info@epicode.school</a></p>
     </footer>
 </body>
 

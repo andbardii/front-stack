@@ -6,7 +6,9 @@ body{
     background-size: cover;
     background-attachment: fixed;
     font-family:'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -18,7 +20,9 @@ h1{
 h2{
     font-size: 23px;
 }
-
+b{
+    font-weight: bold;
+}
 /* HEADER */
 
 #head{
@@ -28,11 +32,6 @@ h2{
     margin: 20px 20px;
     color: white;
 }
-
-
-
-
-
 header h2{
     margin: 40px auto;
 }
@@ -44,7 +43,6 @@ nav ul li{
     margin: 10px auto;
     font-size: large;
 }
-
 nav ul li a{
     color: white;
     text-decoration: none;
@@ -67,9 +65,9 @@ main section{
 nav ul li a:visited{
     color: white;
 }
-
-/* ELEMENTI NEL MAIN - ARTICLE */
-
+.fuchsia{
+    color: fuchsia;
+}
 #subtitle{
     margin-bottom: 30px;
     font-size: 20px;
@@ -78,11 +76,53 @@ nav ul li a:visited{
     color: grey;
     text-decoration: none;
 }
-
+section ol{
+    margin-top: 20px;
+}
+#tool-link, #tool-link:visited{
+    color: rgb(67, 132, 196);
+}
+iframe{
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 7%;
+}
 /* TABELLE */
 
-
-
+table,
+td,
+th
+{
+	border:1px solid #eee;
+	border-collapse:collapse;
+	padding: 3px 5px
+}
+td
+{
+	text-align:right
+}
+th
+{
+	text-align:left
+}
+tr th
+{
+	background-color:#4586ff;
+    color: white;
+}
+tr td{
+    background-color:#ffffff;
+}
+caption
+{
+	font-weight:bold;
+	color:#000000
+}
+section table{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #4586ff;
+}
 /* FORM */
 
 
