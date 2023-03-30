@@ -55,6 +55,7 @@ nav ul li a{
     background-color: white;
     margin: 0 20px;
     padding: 20px;
+    box-shadow: 1px 5px 5px rgb(62, 60, 60)
 }
 main h1{
     margin-bottom: 20px;
@@ -87,34 +88,28 @@ iframe{
     margin-top: 20px;
     border-radius: 7%;
 }
+
 /* TABELLE */
 
-table,
-td,
-th
-{
+table, td, th{
 	border:1px solid #eee;
 	border-collapse:collapse;
 	padding: 3px 5px
 }
-td
-{
+td{
 	text-align:right
 }
-th
-{
+th{
 	text-align:left
 }
-tr th
-{
+tr th{
 	background-color:#4586ff;
     color: white;
 }
 tr td{
     background-color:#ffffff;
 }
-caption
-{
+caption{
 	font-weight:bold;
 	color:#000000
 }
@@ -124,12 +119,38 @@ section table{
     border-bottom: 3px solid #4586ff;
 }
 /* FORM */
-
+#form{
+    background-color: rgb(223, 223, 223);
+    padding: 15px;
+}
 
 
 /* ELEMENTI NELL' ASIDE */
 
-
+.grey-box{
+    background-color: rgb(223, 223, 223);
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(130, 128, 128);
+}   
+.title-2{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.link-article{
+    color: #4586ff;
+}
+.data{
+    font-size: 16px;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row-reverse;
+}
+.calendar{
+    margin-top: 2.3px;
+    margin-right: 3.3px;
+}
 
 /* FOOTER */
 
@@ -141,6 +162,6 @@ section table{
     color: white;
 
 }
-#foot a, a:visited{
+#foot a, #foot a:visited{
     color: fuchsia;
 }
