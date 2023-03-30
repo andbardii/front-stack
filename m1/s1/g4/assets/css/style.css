@@ -18,7 +18,9 @@ h1{
 h2{
     font-size: 23px;
 }
+
 /* HEADER */
+
 #head{
     text-align: center;
     padding: 20px;
@@ -27,28 +29,10 @@ h2{
     color: white;
 }
 
-#corpo{
-    background-color: white;
-    margin: 0 20px;
-    padding: 20px;
-}
-#foot{
-    background-image: linear-gradient(to top , rgb(2, 59, 69) 0%, rgb(26, 119, 150) 100%);
-    text-align: center;
-    padding: 20px;
-    margin: 20px 20px;
-    color: white;
 
-}
-#foot a, a:visited{
-    color: fuchsia;
-}
-main h1{
-    margin-bottom: 20px;
-}
-main section{
-    margin: 20px;
-}
+
+
+
 header h2{
     margin: 40px auto;
 }
@@ -67,9 +51,25 @@ nav ul li a{
 
 }
 
+/* MAIN */
+
+#corpo{
+    background-color: white;
+    margin: 0 20px;
+    padding: 20px;
+}
+main h1{
+    margin-bottom: 20px;
+}
+main section{
+    margin: 20px;
+}
 nav ul li a:visited{
     color: white;
 }
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
 #subtitle{
     margin-bottom: 30px;
     font-size: 20px;
@@ -79,16 +79,28 @@ nav ul li a:visited{
     text-decoration: none;
 }
 
-
-
-/* MAIN */
-
-/* ELEMENTI NEL MAIN - ARTICLE */
-
 /* TABELLE */
+
+
 
 /* FORM */
 
+
+
 /* ELEMENTI NELL' ASIDE */
 
+
+
 /* FOOTER */
+
+#foot{
+    background-image: linear-gradient(to top , rgb(2, 59, 69) 0%, rgb(26, 119, 150) 100%);
+    text-align: center;
+    padding: 20px;
+    margin: 20px 20px;
+    color: white;
+
+}
+#foot a, a:visited{
+    color: fuchsia;
+}
