@@ -35,6 +35,9 @@ h2{
 main h1{
     margin-bottom: 20px;
 }
+main section{
+    margin: 20px;
+}
 header h2{
     margin: 40px auto;
 }
@@ -57,6 +60,15 @@ nav ul li a{
 nav ul li a:visited{
     color: white;
 }
+#subtitle{
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+#subtitle, #subtitle a, #subtitle a:visited{
+    color: grey;
+    text-decoration: none;
+}
+
 
 
 /* MAIN */
