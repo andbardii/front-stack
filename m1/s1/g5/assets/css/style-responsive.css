@@ -95,18 +95,19 @@ button:active{
 /* white section */
 #white-section{
     display: flex;
+    flex-wrap: wrap;
     background-color: white;
-    padding: 110px;
+    padding: 60px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 #white-section img{
     border-radius: 50%;
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
     margin: 20px auto;
 }
-#white-section-img{
-    margin-left: 100px;
-}
+
 #white-section-text{
     text-align: left;
     margin-left: 80px;
@@ -137,32 +138,23 @@ blockquote{
 
 /*! ASIDE */
 aside{
-    display: flex;
     padding: 25px;
 }
 aside article{
-    margin: 25px;
+    margin: 50px 20vw;
     background-color: white;
-    height: 65%;
 
     /*? basics border */
     border: 1px solid #dee1e3;
 }
 article p{
-    margin-bottom: 40px;
+margin: 2vh;
 }
-#p1{
-    margin-bottom: 49px;
-}
-#p3{
-    margin-bottom: 78px;
-}
-
 /*! FOOTER */
 footer{
     padding-bottom: 100px;
     padding-top: 75px;
-    margin-top: 150px;
+    margin-top: 200px;
 
     /*? basics font */
     color: #c8e7f0;
@@ -186,7 +178,6 @@ hr{
 }
 
 footer p{
-    text-align: left;
-    margin-left: 43%;
+    text-align: center;
     font-size: 1rem;
 }
