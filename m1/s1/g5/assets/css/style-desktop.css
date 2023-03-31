@@ -41,12 +41,14 @@ font-style: italic;
 
 /*! HEADER */
 header{
-    text-align: center;
-    padding: 40px 150px;
+    display: flex;
+    height: 7vh;
+    padding-left: 35px;
+    padding-top: 35px;
+    padding-bottom: 35px;
 
     /*? basics backgronud */
     background-color: black;
-
 }
 
 /*! MAIN */
@@ -58,13 +60,13 @@ header{
     
     padding-top: 40px;
     padding-left: 25px;
-    padding-bottom: 10px;
+    padding-bottom: 200px;
     padding-right: 25px;
 
 }
 #main-title{
     margin-bottom: 40px;
-    margin-top: 30px;
+    margin-top: 200px;
 }
 #sub-title{
     font-size: 1.3rem;
@@ -86,24 +88,38 @@ button{
     /*? basics backgronud */
     background-color: #f04c2f;
 }
-
+button:active{
+    background-color:  #25a2c3;
+    border-color:  #25a2c3;
+}
 /* white section */
 #white-section{
+    display: flex;
     background-color: white;
-    padding: 25px;
+    padding: 110px;
 }
 #white-section img{
     border-radius: 50%;
-    width: 75%;
-    height: 75%;
+    width: 50%;
+    height: 50%;
     margin: 20px auto;
+}
+#white-section-img{
+    margin-left: 100px;
+}
+#white-section-text{
+    text-align: left;
+    margin-left: 80px;
+
 }
 
 /* red section */
 #red-section{
     padding: 20px;
-    padding-bottom: 35px;
+    padding-top: 75px;
+    padding-bottom: 100px;
     color: white;
+    margin-bottom: 50px;
 
     /*? basics backgronud */
     background-color: #e22d0e;
@@ -120,9 +136,14 @@ blockquote{
 }
 
 /*! ASIDE */
-article{
+aside{
+    display: flex;
+    padding: 25px;
+}
+aside article{
     margin: 25px;
     background-color: white;
+    height: 65%;
 
     /*? basics border */
     border: 1px solid #dee1e3;
@@ -130,13 +151,18 @@ article{
 article p{
     margin-bottom: 40px;
 }
-article div{
-    padding: 15px;
+#p1{
+    margin-bottom: 49px;
 }
+#p3{
+    margin-bottom: 78px;
+}
+
 /*! FOOTER */
 footer{
     padding-bottom: 100px;
     padding-top: 75px;
+    margin-top: 150px;
 
     /*? basics font */
     color: #c8e7f0;
@@ -155,7 +181,14 @@ footer a{
     color: #c8e7f0;
 }
 hr{
-    width: 50%;
+    width: 30%;
     margin: 30px auto;
 }
-
+footer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer div p{
+    text-align: left;
+}

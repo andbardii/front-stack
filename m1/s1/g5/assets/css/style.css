@@ -86,6 +86,10 @@ button{
     /*? basics backgronud */
     background-color: #f04c2f;
 }
+button:active{
+    background-color:  #25a2c3;
+    border-color:  #25a2c3;
+}
 
 /* white section */
 #white-section{
