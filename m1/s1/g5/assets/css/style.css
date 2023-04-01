@@ -124,6 +124,10 @@ blockquote{
 }
 
 /*! ASIDE */
+aside{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 article{
     margin: 25px;
     background-color: white;
