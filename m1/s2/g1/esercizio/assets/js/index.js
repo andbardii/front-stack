@@ -21,7 +21,8 @@ document.getElementById("button1").onclick = function(){
 document.getElementById("button2").onsubmit = function(){
         document.write('Non si cliccano i pulsanti a caso...')
         }
-
+        
+// Lamp
 document.getElementById("on").onclick = function(){
             document.getElementById("image").src = 'assets/img/light-bulb-1-svgrepo-com.svg' 
         }

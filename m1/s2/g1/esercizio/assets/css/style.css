@@ -10,11 +10,13 @@ body{
     display: flex;
     justify-content: space-between;
 }
-#spegni:active{
+#off:active{
     background-color: black;
     color: black;
+    border-color: black;
 }
-#accendi:active{
+#on:active{
     background-color: yellow;
     color: yellow;
+    border-color: yellow;
 }
