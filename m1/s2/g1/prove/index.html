@@ -9,18 +9,30 @@
 </head>
 
 <body>
-
     <div id="saluto"></div>
 
-
     <script>
-        //JavaScript comment = questo script funziona solo con questa pagina!
-        /*Questo commento e lungo
-          anche su più righe
-        */
+        // JavaScript comment = questo script funziona solo con questa pagina!
+       
+        /* Questo commento e lungo
+          anche su più righe */
+
         document.getElementById("saluto").innerHTML = 'Hello World';
+
+        // Una FUNCTION è un pacchetto di comandi da eseguire in futuro
+        function saluto(){
+            console.log('Hello World')
+        }
+        
+        saluto();
     </script>
+
+    <span id="testo"></span>
+    <p id="testo2"></p>
+    <div id="somma"></div>
+    <!-- Questo script collega un file js esterno alla pagina -->
     <script src="js/script.js"></script>
+
 </body>
 
 </html>
