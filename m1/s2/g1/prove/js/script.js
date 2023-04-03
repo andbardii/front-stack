@@ -19,6 +19,8 @@ console.log(nomeVariabile)
 /* =    operatore di assegnamento */
 /* +    operatore di somma */
 /* -    operatore di sottrazione */
+/* /    operatore di divisione */
+/* *    operatore di moltiplicazione */
 
 //! TIPI DI DATI 
 // number   = Numero (1)
