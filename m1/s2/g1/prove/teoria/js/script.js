@@ -23,9 +23,12 @@ console.log(nomeVariabile)
 //! TIPI DI DATI 
 // number   = Numero (1)
 // string   = Testo ('Uno'; '1')
-// boolean  =
-// arrey    =
-// object   =
+// boolean  = True / False
+// arrey    = []
+// object   = {}
+ 
+// Genera una stringa che indica il tipo di dato dell'oggetto indicato
+console.log(typeof {nomeVariabile})
 
 //! INFORMAZIONI AGGIUNTIVE
 // JS è un linguaggio di programmazione
