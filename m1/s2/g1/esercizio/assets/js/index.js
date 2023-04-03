@@ -8,12 +8,16 @@ alert('ATTENZIONE! le seguenti immagini non sono adatte ad un pubblico minore')
 
 var anni = prompt('Quanti anni hai?');
 
-        console.log(anni);
-
-        if( anni >= 18 && anni <= 120){
+        if( anni >= 18 && anni <= 200){
 
         }else if(anni < 18){
             location.href = 'https://www.laleggepertutti.it/428588_cosa-cambia-per-la-legge-a-18-anni'
         }
 
-var
+document.getElementById("button1").onclick = function(){
+    document.getElementById("button1").innerHTML = "OTTIMO FUNZIONA TUTTO!" 
+}
+
+document.getElementById("button2").onsubmit = function(){
+        document.write('Non si cliccano i pulsanti a caso')
+        }
