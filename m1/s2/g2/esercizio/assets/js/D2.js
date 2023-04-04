@@ -25,7 +25,7 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-var name = 'Andrea'
+let name = 'Andrea'
 console.log(name)
 
 /* ESERCIZIO 3
@@ -51,7 +51,7 @@ console.log(x)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-var name = 'Bardi'
+name = 'Bardi'
 console.log(name)
 
 const perma = 6
