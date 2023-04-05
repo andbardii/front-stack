@@ -108,23 +108,6 @@ let theThird = 30
 
 console.log(theFirst, theSecond, theThird)
 
-function theAgorithm (){
-if(theFirst > theSecond && theFirst > theThird){
-  theFirst = theFirst
-}else if(theFirst < theSecond){
-  theFirst = theSecond
-}else if(theFirst < theThird){
-  theFirst = theThird
-}
-if(theSecond > theThird){
-  theSecond = theSecond
-}else{
-  theSecond = theThird
-}
-}
-theAgorithm()
-console.log(theFirst, theSecond, theThird)
-
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
