@@ -102,6 +102,7 @@ console.log(totalShoppingCart)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 let theFirst = 10
 let theSecond = 20
 let theThird = 30
@@ -157,11 +158,11 @@ if (val < 10) {
 const me = {
   name: 'John',
   lastName: 'Doe',
-  city: 'Toronto',
   skills: ['javascript', 'html', 'css'],
 }
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
@@ -183,9 +184,14 @@ console.log(me)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let theArrey = []
+theArrey.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+console.log(theArrey)
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+theArrey[9] = 100
+console.log(theArrey)
