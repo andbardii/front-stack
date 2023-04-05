@@ -102,13 +102,32 @@ console.log(totalShoppingCart)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-let theFirst = 10
-let theSecond = 20
-let theThird = 30
+{
+let a = 10
+let b = 20
+let c = 30
 
-console.log(theFirst, theSecond, theThird)
+console.log(a, b, c)
 
+        if (a > b && a > c){if (b>c){
+            console.log(a, b, c);
+        }else{
+            console.log(a, c, b);
+        }}else if (b > a && b > c){
+            if (a>c)
+        {
+             console.log(b + a + c);
+        }
+        else
+        {
+             console.log(b, c, a);
+        }}else if (c > a && c > b){
+        if (a>b){
+            console.log(c, a, b);
+        }else{
+            console.log(c, b, a);
+        }}
+}
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
@@ -160,9 +179,13 @@ const me = {
   lastName: 'Doe',
   skills: ['javascript', 'html', 'css'],
 }
+console.log(me)
+
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+me.city = "Toronto"
+console.log(me)
+
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
