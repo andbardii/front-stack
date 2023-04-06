@@ -254,6 +254,3 @@ console.log(characters)
 Crea una funzionalità che prenda un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo
 */
 
-function printProperties(element){
-  console.log(element.name + " " + element.height + " " + element.mass + " " + element.hair_color + " " + element.skin_color + " " + element.eye_color + " " + element.birth_year + " " + element.gender)
-}
