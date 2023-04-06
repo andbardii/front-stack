@@ -198,6 +198,7 @@ Se la massa è superiore a 1000 stampa in console: "DANGER! OVERLOAD ALERT: Jump
 
 Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 switch (massaTotale) {
   case massaTotale < 500:
@@ -239,10 +240,11 @@ Usa uno più for loop per raggiungere il risultato
 
 Una volta fatto crea un conosle.log per controllare la proprietà length di "characters" prima e dopo l'operazione
 */
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 for (let i = 0; i < femaleCharacters.length; i++){
   if (characters[i] == femaleCharacters[i]){
-    characters.pop()
+    characters.splice()
 }
 }
 
