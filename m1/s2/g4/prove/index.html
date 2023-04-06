@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <select id="frutta" onchange="mostraPrezzo()">        <!-- Onchange si attiva ad un qualsiasi cambiamento dell'elemento -->
+        <option value="">SELEZIONA</option>
+        <option value="Kiwi">Kiwi</option>
+        <option value="Mela">Mela</option>
+        <option value="Pera">Pera</option>
+        <option value="Mango">Mango</option>
+        <option value="Papaya">Papaya</option>
+    </select>
+
+    <script>
+function mostraPrezzo(){
+        let frutto = document.getElementById('frutta').value
+
+        switch(frutto){
+            case "Mela":
+                console.log("La mela costa 1 euro")
+                break       //Interrompe il ciclo se il case è true
+            case "Mango":
+            case "Kiwi":
+            console.log("Il Mango e il Kiwi costano 3 euro")
+                break
+            default:
+            console.log(`Non abbiamo ${frutto}`)
+        }
+    }
+    </script>
+</body>
+</html>
