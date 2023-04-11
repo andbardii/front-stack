@@ -155,5 +155,7 @@ console.log(cutString("trovare"))
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log("ESERCIZIO 10")
 function giveMeRandom(n) {
-
-}
+    for (let i = 0; i < n; i++) {
+    console.log(Math.floor(Math.random() * 10))
+}}
+console.log(giveMeRandom(3))
