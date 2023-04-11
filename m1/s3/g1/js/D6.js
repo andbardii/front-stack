@@ -133,7 +133,7 @@ function upperFirst(stringa) {
        paroleStringa[i] = paroleStringa[i].charAt(0).toUpperCase() + paroleStringa[i].slice(1)
     }
 }
-console.log(upperFirst("ciao ePICODE"))
+upperFirst("ciao ePICODE")
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
@@ -158,4 +158,4 @@ function giveMeRandom(n) {
     for (let i = 0; i < n; i++) {
     console.log(Math.floor(Math.random() * 10))
 }}
-console.log(giveMeRandom(3))
+giveMeRandom(3)
