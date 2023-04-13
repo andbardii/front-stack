@@ -83,8 +83,7 @@
     const revealFooterLink = function () {
       let tastoFooter = document.querySelector("footer");
       tastoFooter.addEventListener("click", function () {
-         let thatUrl = document.querySelector("footer a").getAttribute("href")
-         alert(thatUrl)
+         alert(document.querySelector("footer a").getAttribute("href"))
     })
    }
    revealFooterLink()
@@ -94,10 +93,12 @@
     */
 
     const generateTable = function () {
-
-
+      let tableArea = document.querySelector("#tableArea")
+      let table = document.createElement("table")
+      let tr = table.append(document.createElement("tr"))
+      let th = tr.append(document.createElement("th"))
     }
-
+generateTable()
     /* ESERCIZIO 12
        Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
     */
