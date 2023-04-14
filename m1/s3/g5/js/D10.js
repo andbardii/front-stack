@@ -103,7 +103,8 @@ console.log(deleteOne("Guys don't delete me please", true))
 */
 console.log("ESERCIZIO 5")
 function onlyLetters(stringa) {
-return stringa.replace(/[0-9]/g, "")
+let regex = /[0-9]/g
+return stringa.replace(regex, "")
 }
 console.log(onlyLetters("I have 3 cats"))
 /* ESERCIZIO 6
@@ -159,6 +160,10 @@ console.log(`Oggi è ${whatDayIsIt()}`)
   }
 */
 console.log("ESERCIZIO 8")
+function rollTheDices(numero) {
+  return dice()
+}
+console.log(rollTheDices(3))
 /* ESERCIZIO 9
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
 */
