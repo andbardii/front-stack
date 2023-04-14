@@ -12,66 +12,140 @@ REGOLE
 /* ESERCIZIO A
   Crea una variabile chiamata "sum" e assegnaci il risultato della somma tra i valori 10 e 20.
 */
+console.log("ESERCIZIO A")
+let firstValue = 10
+let secondValue = 20
+let sum = firstValue + secondValue
 
+//let sum = 10 + 20 
+console.log(sum)
 /* ESERCIZIO B
   Crea una variabile chiamata "random" e assegnaci un numero casuale tra 0 e 20 (deve essere generato dinamicamente a ogni esecuzione).
 */
-
+console.log("ESERCIZIO B")
+let randomNumber = Math.floor(Math.random() * 21)
+console.log(randomNumber)
 /* ESERCIZIO C
   Crea una variabile chiamata "me" e assegnaci un oggetto contenente le seguenti proprietà: name = il tuo nome, surname = il tuo cognome, age = la tua età.
 */
-
+console.log("ESERCIZIO C")
+let me = { name : "Andrea", surname: "Bardi", age: 20 }
+console.log(me)
 /* ESERCIZIO D
   Crea del codice per rimuovere programmaticamente la proprietà "age" dall'oggetto precedentemente creato.
 */
-
+console.log("ESERCIZIO D")
+delete me.age
+console.log(me)
 /* ESERCIZIO E
   Crea del codice per aggiungere programmaticamente all'oggetto precedentemente creato un array chiamato "skills", contenente i linguaggi di programmazione che conosci.
 */
-
+console.log("ESERCIZIO E")
+me.skills = ["HTML", "CSS", "JavaScript"]
+console.log(me)
 /* ESERCIZIO F
   Crea un pezzo di codice per aggiungere un nuovo elemento all'array "skills" contenuto nell'oggetto "me".
 */
-
+console.log("ESERCIZIO F")
+me.skills.push("Python")
+console.log(me)
 /* ESERCIZIO G
   Crea un pezzo di codice per rimuovere programmaticamente l'ultimo elemento dall'array "skills" contenuto nell'oggetto "me".
 */
-
+console.log("ESERCIZIO G")
+me.skills.pop()
+console.log(me)
 // Funzioni
 
 /* ESERCIZIO 1
   Crea una funzione chiamata "dice": deve generare un numero casuale tra 1 e 6.
 */
-
+console.log("ESERCIZIO 1")
+function dice() {
+  return Math.floor(Math.random() * 6) + 1
+}
+console.log(dice())
 /* ESERCIZIO 2
   Crea una funzione chiamata "whoIsBigger" che riceve due numeri come parametri e ritorna il maggiore dei due.
 */
-
+console.log("ESERCIZIO 2")
+function whoIsBigger(primoNumero, secondoNumero) {
+  return Math.max(primoNumero, secondoNumero)
+}
+console.log(whoIsBigger(3, 79))
 /* ESERCIZIO 3
   Crea una funzione chiamata "splitMe" che riceve una stringa come parametro e ritorna un'array contenente ogni parola della stringa.
 
   Es.: splitMe("I love coding") => ritorna ["I", "Love", "Coding"]
 */
-
+console.log("ESERCIZIO 3")
+function splitMe(stringa) {
+  return stringa.split(" ")
+}
+console.log(splitMe("I love coding but I also love my mental health"))
 /* ESERCIZIO 4
   Crea una funzione chiamata "deleteOne" che riceve una stringa e un booleano come parametri.
   Se il valore booleano è true la funzione deve ritornare la stringa senza il primo carattere, altrimenti la deve ritornare senza l'ultimo.
 */
-
+console.log("ESERCIZIO 4")
+function deleteOne(stringa, booleano) {
+if (booleano == true){
+  return stringa.slice(1 , stringa.length)}
+  else{
+  return stringa.slice(0, stringa.length - 1)
+  }
+}
+console.log(deleteOne("Guys don't delete me please", true))
 /* ESERCIZIO 5
   Crea una funzione chiamata "onlyLetters" che riceve una stringa come parametro e la ritorna eliminando tutte le cifre numeriche.
 
   Es.: onlyLetters("I have 4 dogs") => ritorna "I have dogs"
 */
-
+console.log("ESERCIZIO 5")
+function onlyLetters(stringa) {
+return stringa.replace(/[0-9]/g, "")
+}
+console.log(onlyLetters("I have 3 cats"))
 /* ESERCIZIO 6
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
-
+console.log("ESERCIZIO 6")
+function isThisAnEmail(emailString) {
+  return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(emailString)
+}
+console.log(`Si tratta di una email? ${isThisAnEmail("emailfake@example.com")}`)
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
 */
+console.log("ESERCIZIO 7")
+function whatDayIsIt() {
+let date = new Date()
+let day = date.getDay()
 
+switch (day) {
+  case 0:
+    return "Domenica"
+    break
+  case 1:
+    return "Lunedì"
+    break
+  case 2:
+    return "Martedì"
+    break
+  case 3:
+    return "Mercoledì"
+    break
+  case 4:
+    return "Giovedì"
+    break
+  case 5:
+    return "Venerdì"
+    break
+  case 6:
+    return "Sabato"
+}
+}
+console.log(`Oggi è ${whatDayIsIt()}`)
 /* ESERCIZIO 8
   Scrivi una funzione chiamata "rollTheDices" che riceve un numero come parametro.
   Deve invocare la precedente funzione dice() il numero di volte specificato nel parametro, e deve tornare un oggetto contenente una proprietà "sum":
@@ -84,11 +158,11 @@ REGOLE
       values: [3, 3, 4]
   }
 */
-
+console.log("ESERCIZIO 8")
 /* ESERCIZIO 9
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
 */
-
+console.log("ESERCIZIO 9")
 /* ESERCIZIO 10
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
 */
