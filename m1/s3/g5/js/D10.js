@@ -506,7 +506,3 @@ console.log("ESERCIZIO 28")
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
 console.log("ESERCIZIO 29")
-  function isItPrime(number){
-    
-  }
-  console.log(isItPrime(2))
