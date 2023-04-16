@@ -446,13 +446,11 @@ link.forEach(function(link){
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
-console.log("ESERCIZIO 24")
 let myList = document.querySelector("#myList")
 myList.appendChild(document.createElement("li")).textContent = "List element"
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
-console.log("ESERCIZIO 25")
 function deleteMyList(){
 myList.remove()
 }
@@ -460,7 +458,6 @@ deleteMyList()
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
-console.log("ESERCIZIO 26")
 function addThatClass(){
 let trTest = document.querySelectorAll("tr")
   trTest.forEach(function(tr){
