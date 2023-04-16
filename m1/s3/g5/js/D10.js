@@ -502,6 +502,20 @@ halfTree(3);
 
 */
 console.log("ESERCIZIO 28")
+function tree(altezza) {
+  for (var i = 0; i < altezza; i++) {
+    let asterisco = '';
+    let space = (altezza - i);
+    if (i == 0) {
+      asterisco += ' '.repeat(space + 1) + '\n';
+    }
+    asterisco += ' '.repeat(space + 1);
+    let zero = 2 * i + 1;
+    asterisco += '*'.repeat(zero);
+    console.log(asterisco);
+  }
+}
+tree(7);
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
