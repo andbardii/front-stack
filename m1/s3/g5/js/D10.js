@@ -483,10 +483,10 @@ addThatClass()
 */
 console.log("ESERCIZIO 27")
 function halfTree(altezza) {
-  let str = "";
+  let tree = "";
   for(i = 0; i < altezza; i++) {
-    str = str.concat("*");
-      console.log(str);
+    tree = tree.concat("*");
+      console.log(tree);
   }
 }
 halfTree(3);
@@ -506,3 +506,20 @@ console.log("ESERCIZIO 28")
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
 console.log("ESERCIZIO 29")
+function isItPrime(number){
+if (number < 0) {
+  return false
+}else if (number <= 3 && number != 0) {
+  return true
+}else if (number % 2 == 0 || number % 3 == 0) {
+  return false
+}
+for (let i = 5; i*i <= number; i+=6) {
+  if (number % i == 0 || number % (i+2) == 0) {
+    return false
+  }else{
+    return true
+  }
+  
+}}
+console.log(isItPrime(3))
