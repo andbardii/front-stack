@@ -3,6 +3,7 @@ body{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     color: #622407;
+    margin: 15px;
 }
 a, a:visited {
     color: #622407;
@@ -11,29 +12,41 @@ a, a:visited {
 ul{
     list-style: none;
 }
+img{
+    width: 100%;
+}
+
+/* ADD ClASS */
+.center{
+    text-align: center;
+}
 
 /*! CARD */
 .card{
-background-color: rgb(255, 255, 220);
-display: flex;
-flex-direction: column;
-border-radius: 120px;
-width: 400px;
-margin: 0 auto;}
+    background-color: #FAF7E3;
+    display: flex;
+    flex-direction: column;
+    border-radius: 120px;
+    margin: 0 auto;
+}
+
 .card img{
     border-top-right-radius: 120px;
     border-top-left-radius: 120px ;
 }
+
 .text{
     text-align: left;
     line-height: 0%;
     margin-left: 50px;
-    margin-top: 15px;
+    margin-top: 25px;
 }
+
 .price{
     text-align: end;
     margin-right: 50px;
 }
+
 .card button{
     background-color: rgb(255, 234, 114);
     border-radius: 15px;
@@ -50,23 +63,72 @@ margin: 0 auto;}
 
 /*! NAV */
 .mainNav{
-    background-color: rgb(255, 255, 220);
+    background-color: #FAF7E3;
     padding: 10px;
+    margin-bottom: 50px;
+    height: 100%;
+    border-radius: 50px;
 }
 
 .mainNav ul{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
 }
 
-.mainNav ul li a{
+.mainNav ul li{
     background-color: rgb(255, 234, 114);
-    padding: 5px 10px;
+    padding: 10px 20px;
+    margin: 5px 10px;
+    border-radius: 50px;
+    width: 35%;
+    text-align: center;
+}
+.mainNav ul .bee{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+    order: -1;
+    width: 50%;
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 
-.mainNav img{
-    max-width: 10%;
+.bee img {
+    width: 20%;
+    height: 20%;
+    margin-right: 10px;
 }
 
-.shop{
-    
+/*! ARTICLE */
+.article{
+    margin-top: 50px;
+    background-color: #FAF7E3;
+    padding: 5px 30px;
+    border-radius: 15px;
+}
+.article img{
+    margin-top: 30px;
+}
+
+
+@media screen and (max-width: 450px) {
+.mainNav ul li{
+    width: 100%;
+}
+}
+@media screen and (min-width: 700px) {
+.mainNav ul{
+    flex-wrap: nowrap;
+}
+.mainNav ul li{
+    width: 20%;
+}
+.mainNav ul .bee{
+    order: 0;
+    width: 20%;
+}
 }
