@@ -1,0 +1,72 @@
+/*! GENERALI */
+body{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #622407;
+}
+a, a:visited {
+    color: #622407;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+/*! CARD */
+.card{
+background-color: rgb(255, 255, 220);
+display: flex;
+flex-direction: column;
+border-radius: 120px;
+width: 400px;
+margin: 0 auto;}
+.card img{
+    border-top-right-radius: 120px;
+    border-top-left-radius: 120px ;
+}
+.text{
+    text-align: left;
+    line-height: 0%;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+.price{
+    text-align: end;
+    margin-right: 50px;
+}
+.card button{
+    background-color: rgb(255, 234, 114);
+    border-radius: 15px;
+    text-align: center;
+    border: none;
+    padding: 5px 20px;
+    color: #622407;
+    margin-bottom: 15px;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 25%;
+    font-size: 1.2rem;
+}
+
+/*! NAV */
+.mainNav{
+    background-color: rgb(255, 255, 220);
+    padding: 10px;
+}
+
+.mainNav ul{
+    display: flex;
+}
+
+.mainNav ul li a{
+    background-color: rgb(255, 234, 114);
+    padding: 5px 10px;
+}
+
+.mainNav img{
+    max-width: 10%;
+}
+
+.shop{
+    
+}
