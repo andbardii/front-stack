@@ -116,19 +116,32 @@ img{
 
 
 @media screen and (max-width: 450px) {
-.mainNav ul li{
-    width: 100%;
-}
+    .mainNav ul li{
+        width: 100%;
+    }
 }
 @media screen and (min-width: 700px) {
-.mainNav ul{
-    flex-wrap: nowrap;
+    .mainNav ul{
+        flex-wrap: nowrap;
+    }
+    .mainNav ul li{
+        width: 20%;
+    }
+    .mainNav ul .bee{
+        order: 0;
+        width: 20%;
+    }
 }
-.mainNav ul li{
-    width: 20%;
-}
-.mainNav ul .bee{
-    order: 0;
-    width: 20%;
-}
+@media screen and (min-width: 1000px) {
+    body{
+        display: flex;
+    }
+    .mainNav {
+        width: 200px;
+        height: 80vh;
+    }
+    .mainNav ul{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
 }
