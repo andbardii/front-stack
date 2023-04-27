@@ -1,0 +1,40 @@
+/*! GENERALE */
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*! POSTIT */
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: Indie Flower, sans-serif;
+}
+.postit{
+    width: 200px;
+    height: 140px;
+    padding: 70px;
+    background-color: lightblue;
+    margin: 5px;
+    box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.5);
+}
+.taskNumber{
+    font-size: 3.3rem;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.task{
+    font-size: 2rem;
+}
+
+/*! COLORI */
+.yellow{
+    background-color: #FCFBC9;
+}
+.green{
+    background-color: #C9FDCB;
+}
+.purple{
+    background-color: #C0C0EA;
+}
