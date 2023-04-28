@@ -13,6 +13,7 @@ body .blackButton{
     color: white;
     border: none;
     border-radius: 30px;
+    cursor: pointer;
 }
 
 /*? FONT */
@@ -192,6 +193,7 @@ body .blackButton{
     margin-top: 10px;
     padding-bottom: 30px;
     border-bottom: 1px solid lightgray;
+    cursor: pointer;
 }
 .aside .collegamenti{
     color: lightgray;
@@ -202,5 +204,5 @@ body .blackButton{
 .aside .collegamenti div{
     margin-right: 25px;
     margin-bottom: 10px;
-
+    cursor: pointer;
 }
