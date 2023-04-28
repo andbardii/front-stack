@@ -172,10 +172,27 @@ body .blackButton{
 .containerButtons{
     display: flex;
     flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .containerButtons .darkGreyButton{
     background-color: lightgray;
     padding: 10px 15px;
     border-radius: 30px;
     cursor: pointer;
+    width: 24%;
+    margin: 5px;
+    text-align: center;
+}
+.aside .p{
+    color: #1a8917;
+    margin-top: 10px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid lightgray;
+}
+.aside .collegamenti{
+    color: lightgray;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
