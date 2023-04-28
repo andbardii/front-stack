@@ -4,7 +4,7 @@ body{
     box-sizing: border-box;
 }
 img{
-    max-width: 80%;
+    max-width: 100%;
 }
 /* BLACK BUTTON */
 body .blackButton{
@@ -64,12 +64,12 @@ body .blackButton{
 .header{
     background-color: #FFC017;
     display: flex;
+    justify-content: space-between;
     border-bottom: 1px solid black;
     font-family: 'Roboto', sans-serif;
 }
 .headerText{
-    padding: 30px 80px;
-    padding-top: 100px;
+    padding: 80px;
 }
 .headerText div{
     margin-bottom: 40px;
@@ -82,6 +82,12 @@ body .blackButton{
     padding: 10px 60px;
     font-size: 1.4rem;
 }
+/* M ANIMATION */
+.letterM {
+    transition: 200ms ease-in;
+    opacity: 1;
+}
+
 /* TRENDING TOPIC */
 .trendingTopic{
     display: flex;
