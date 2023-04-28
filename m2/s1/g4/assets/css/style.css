@@ -4,7 +4,7 @@ body{
     box-sizing: border-box;
 }
 img{
-    max-width: 90%;
+    max-width: 80%;
 }
 /* BLACK BUTTON */
 body .blackButton{
@@ -156,7 +156,7 @@ body .blackButton{
 .textContentArticle{
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    width: 55vw;
 }
 .articleExtra{
     margin-top:10px ;
@@ -172,7 +172,11 @@ body .blackButton{
 /* ASIDE */
 .aside{
     padding: 0px 80px;
-    width: 40vw;
+    width: 45vw;
+    height: 50vh;
+    position: sticky;
+    top: 120px;
+    z-index: 1000;
 }
 .containerButtons{
     display: flex;
