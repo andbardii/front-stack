@@ -134,7 +134,14 @@ img{
 .trendContent .h5{
     margin-bottom: 10px;
 }
-
+@media screen and (max-width: 900px){
+    .trendingTopic .theContainer{
+        flex-direction: column;
+    }
+    .theContainer .trendContainer{
+        width: 100%;
+    }
+}
 /*? IMMAGINI */
 .credit{
     display: flex;
@@ -180,7 +187,15 @@ img{
     border-radius: 30px;
     cursor: pointer;
 }
+@media screen and (max-width: 900px){
+    .mainContents{
+        flex-direction: column;
 
+    }
+    .textContentArticle{
+    }
+
+}
 /* ASIDE */
 .aside{
     padding: 0px 80px;
