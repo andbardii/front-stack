@@ -1,0 +1,181 @@
+/*! GENERALI */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Spectral:wght@200;400&display=swap');
+body{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+/* BLACK BUTTON */
+body .blackButton{
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+}
+
+/*? FONT */
+.h1{
+    font-size: 7rem;
+    font-family: 'Spectral', serif;
+}
+.h3{
+    font-size: 1.5rem;
+}
+.h4{
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+.h5{
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.p{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* TOPBAR */
+.topBar{
+    background-color: #FFC017;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 20px 100px;
+    border-bottom: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+}
+.nav{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-grow: 1;
+    align-items: center;
+}
+.nav div{
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+
+/* HEADER */
+.header{
+    background-color: #FFC017;
+    display: flex;
+    border-bottom: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+}
+.headerText{
+    padding: 30px 80px;
+    padding-top: 100px;
+}
+.headerText div{
+    margin-bottom: 40px;
+}
+.header .mm{
+    max-width: 40%;
+    align-self: flex-end;
+}
+.header .blackButton{
+    padding: 10px 60px;
+    font-size: 1.4rem;
+}
+/* TRENDING TOPIC */
+.trendingTopic{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid grey;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 50px;
+}
+.trendingTopic .trendingTitle{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-left: 80px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+}
+.trendingTopic .theContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0px 80px;
+    padding-bottom: 40px;
+}
+.theContainer .trendContainer{
+    width: 30%;
+    display: flex;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+.trendingTopic .trendPosition{
+    color: rgb(206, 206, 206);
+    font-size: 1.8rem;
+    font-weight: 900;
+    padding-right: 10px;
+}
+.trendContent .h5{
+    margin-bottom: 10px;
+}
+
+/*? IMMAGINI */
+.credit{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.creditImg{
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+/* MAIN CONTENTS */
+.mainContents{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+/* ARTICLES */
+.articles{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 80px;
+}
+.article{
+    display: flex;
+    height: 200px;
+}
+.textContentArticle{
+    display: flex;
+    flex-direction: column;
+}
+.articleExtra{
+    margin-top:10px ;
+}
+.greyButton{
+    background-color: lightgray;
+    padding: 5px 10px;
+    color: rgb(120, 120, 120);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* ASIDE */
+.aside{
+    padding: 0px 80px;
+}
+.containerButtons{
+    display: flex;
+    flex-wrap: wrap;
+}
+.containerButtons .darkGreyButton{
+    background-color: lightgray;
+    padding: 10px 15px;
+    border-radius: 30px;
+    cursor: pointer;
+}
