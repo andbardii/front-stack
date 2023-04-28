@@ -1,3 +1,17 @@
+//TOPBAR SWITCH
+let topBar = document.querySelector(".topBar")
+let button = document.querySelector(".topBar .blackButton")
+
+window.onscroll = function (){
+    if(window.pageYOffset > 200){
+        topBar.classList.add("newTopBar")
+        button.classList.add("newButton")
+    }else{
+        topBar.classList.remove("newTopBar")
+        button.classList.remove("newButton")
+    }
+}
+// ANIMATION
 let letters = document.querySelectorAll('.animation svg g')
 
 function selectRandom(x) {

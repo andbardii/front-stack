@@ -7,7 +7,7 @@ img{
     max-width: 100%;
 }
 /* BLACK BUTTON */
-body .blackButton{
+.blackButton{
     padding: 10px 15px;
     background-color: black;
     color: white;
@@ -58,7 +58,13 @@ body .blackButton{
     margin-left: 25px;
     cursor: pointer;
 }
-
+.newTopBar{
+    background-color: white;
+}
+.newButton{
+    background-color: #1a8917;
+    color: white;
+}
 
 /* HEADER */
 .header{
