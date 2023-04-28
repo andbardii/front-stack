@@ -4,7 +4,7 @@ body{
     box-sizing: border-box;
 }
 img{
-    max-width: 100%;
+    max-width: 90%;
 }
 /* BLACK BUTTON */
 body .blackButton{
@@ -28,8 +28,8 @@ body .blackButton{
     font-weight: 900;
 }
 .h5{
-    font-size: 1.2rem;
-    font-weight: 900;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 .p{
     font-size: 1rem;
@@ -145,14 +145,17 @@ body .blackButton{
     display: flex;
     flex-direction: column;
     padding: 0px 80px;
+    padding-right: 0px;
 }
 .article{
     display: flex;
     height: 200px;
+    margin-bottom: 30px;
 }
 .textContentArticle{
     display: flex;
     flex-direction: column;
+    width: 50vw;
 }
 .articleExtra{
     margin-top:10px ;
@@ -168,6 +171,7 @@ body .blackButton{
 /* ASIDE */
 .aside{
     padding: 0px 80px;
+    width: 40vw;
 }
 .containerButtons{
     display: flex;
@@ -180,7 +184,6 @@ body .blackButton{
     padding: 10px 15px;
     border-radius: 30px;
     cursor: pointer;
-    width: 24%;
     margin: 5px;
     text-align: center;
 }
@@ -194,5 +197,10 @@ body .blackButton{
     color: lightgray;
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin-top: 30px;
+}
+.aside .collegamenti div{
+    margin-right: 25px;
+    margin-bottom: 10px;
+
 }
