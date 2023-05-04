@@ -4,6 +4,7 @@ nav{
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 10;
     background-color: $basic-purple;
     color: $basic-font-color;
     .linksContainer{
