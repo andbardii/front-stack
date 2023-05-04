@@ -1,0 +1,24 @@
+main{
+    @include basicPadding;
+}
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .firstCard{
+        @include basicCard;
+        @include basicPadding;
+    }
+    .secondCard{
+        @include basicCard;
+        @include basicPadding;
+    }
+    .thirdCard{
+        @include basicCard;
+        @include basicPadding;
+    }
+    .fourthCard{
+        @include basicCard;
+        @include basicPadding;
+    }
+}

@@ -1,0 +1,29 @@
+.button{
+    padding: 10px 15px;
+    font-weight: bold;
+    border: none;
+    color: $basic-font-color;
+    cursor: pointer;
+}
+
+.firstButton{
+    @extend .button;
+    background-color: $basic-blue;
+    &:hover{
+        background-color: blue;
+    }
+}
+.secondButton{
+    @extend .button;
+    background-color: $basic-orange;
+    &:hover{
+        background-color: orangered;
+    }
+}
+.thirdButton{
+    @extend .button;
+    background-color: $basic-green;
+    &:hover{
+        background-color: green;
+    }
+}

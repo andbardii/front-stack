@@ -1,1 +1,194 @@
-/*# sourceMappingURL=style.css.map */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: bold;
+  font-size: 1.8rem;
+}
+
+nav {
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: #640fc5;
+  color: #f4f4f4;
+}
+nav .linksContainer {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-evenly;
+}
+nav .linksContainer div {
+  cursor: pointer;
+}
+nav img {
+  width: 50px;
+}
+
+header {
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  background-image: linear-gradient(#640fc5, #0e1022);
+  color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+}
+header .smsContainer {
+  width: 100%;
+}
+header .headerContent {
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-right: 0px;
+}
+header .contentContainerHeader {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+header .headerTextContainer {
+  width: 100%;
+}
+header .containerButtons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    flex-direction: row;
+  }
+  header .containerButtons {
+    flex-direction: column;
+  }
+}
+main {
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.cardContainer .firstCard {
+  background-color: #640fc5;
+  color: #f4f4f4;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 37%;
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+.cardContainer .secondCard {
+  background-color: #640fc5;
+  color: #f4f4f4;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 37%;
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+.cardContainer .thirdCard {
+  background-color: #640fc5;
+  color: #f4f4f4;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 37%;
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+.cardContainer .fourthCard {
+  background-color: #640fc5;
+  color: #f4f4f4;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 37%;
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+footer {
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  background-color: #0e1022;
+  color: #f4f4f4;
+  text-align: center;
+}
+footer span {
+  color: aqua;
+  cursor: pointer;
+}
+footer span:hover {
+  color: #640fc5;
+}
+
+.button, .thirdButton, .secondButton, .firstButton {
+  padding: 10px 15px;
+  font-weight: bold;
+  border: none;
+  color: #f4f4f4;
+  cursor: pointer;
+}
+
+.firstButton {
+  background-color: #0e6cff;
+}
+.firstButton:hover {
+  background-color: blue;
+}
+
+.secondButton {
+  background-color: #ff8700;
+}
+.secondButton:hover {
+  background-color: orangered;
+}
+
+.thirdButton {
+  background-color: #4caf50;
+}
+.thirdButton:hover {
+  background-color: green;
+}/*# sourceMappingURL=style.css.map */

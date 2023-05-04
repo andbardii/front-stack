@@ -1,0 +1,13 @@
+footer{
+    @include basicPadding;
+    background-color: $basic-dark-purple;
+    color: $basic-font-color;
+    text-align: center;
+    span{
+        color: aqua;
+        cursor: pointer;
+        &:hover{
+            color: $basic-purple;
+        }
+    }
+}

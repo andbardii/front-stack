@@ -1,0 +1,57 @@
+nav{
+    @include basicPadding;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: $basic-purple;
+    color: $basic-font-color;
+    .linksContainer{
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-evenly;
+        div{
+            cursor: pointer;
+        }
+    }
+    img{
+        width: 50px;
+    }
+}
+header{
+    @include basicPadding;
+    background-image: linear-gradient($basic-purple, $basic-dark-purple);
+    color: $basic-font-color;
+    display: flex;
+    flex-direction: column;
+    .smsContainer{
+        width:100%;
+    }
+    .headerContent{
+        @include basicPadding;
+        padding-right: 0px;
+    }
+    .contentContainerHeader{
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .headerTextContainer{
+        width: 100%;
+    }
+    .containerButtons{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header{
+        flex-direction: row;
+
+        .containerButtons{
+            flex-direction: column;
+        }
+    }
+}
