@@ -9,6 +9,16 @@ nav a:hover {
   color: white !important;
 }
 
+#main img {
+  box-shadow: 0px 0px 5px rgb(0, 0, 0) !important;
+  position: relative !important;
+  cursor: pointer !important;
+}
+#main img:hover {
+  scale: 1.2 !important;
+  z-index: 1 !important;
+}
+
 footer {
   background-color: #141414;
 }
