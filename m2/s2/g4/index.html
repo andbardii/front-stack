@@ -9,14 +9,17 @@
   </head>
   <body class="bg-dark">
 
+    <!--! NAVBAR -->
     <nav class="navbar navbar navbar-dark bg-dark navbar-expand-lg bg-light px-2 sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
             <img src="assets/netflix_logo.png" alt="Netflix Logo" height="50">
         </a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -31,7 +34,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="#">My List</a>
             </li>
-          </ul> 
+          </ul>
+
+          <!-- PARTE DESTRA -->
           <form class="d-flex" role="search">
             <button class="btn" type="submit">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-search" viewBox="0 0 16 16">
@@ -44,6 +49,7 @@
                 <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
                 </svg>
             </button>
+
                 <div class="dropdown">
                     <button class="btn dropdown-toggle text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="assets/avatar.png" alt="First Account Image" height="30">
@@ -54,18 +60,20 @@
                         Kids Account
                       </a></li>
                     </ul>
-                  </div>
+                </div>
           </form>
         </div>
       </div>
     </nav>
+    <!--! MAIN CONTENT -->
+    <div class="container-fluid px-4 text-white">
 
-    <div class="container-fluid px-4">
-        <div class="row">
+        <!--! TITOLO -->
+        <div class="row justify-content-center align-items-center mt-2">
             <div class="col-2"><h1 class="d-inline text-white">TV Shows</h1></div>
-            <div class="col">
+        <div class="col">
                 <div class="dropdown">
-                    <button class="btn border-1 border-white dropdown-toggle text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="bg-black py-1 px-3 border-1 border-white dropdown-toggle text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Generes
                     </button>
                     <ul class="dropdown-menu">
@@ -79,8 +87,132 @@
                     </ul>
                   </div>
             </div>
+        <div class="col-2 d-flex justify-content-end align-items-center">
+            <button class="btn border-1 border-white d-flex justify-content-center p-2 rounded-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-text-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+            </button>
+            <button class="btn border-1 border-white d-flex justify-content-center p-2 rounded-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffffff" class="bi bi-bounding-box" viewBox="0 0 16 16">
+                    <path d="M5 2V0H0v5h2v6H0v5h5v-2h6v2h5v-5h-2V5h2V0h-5v2H5zm6 1v2h2v6h-2v2H5v-2H3V5h2V3h6zm1-2h3v3h-3V1zm3 11v3h-3v-3h3zM4 15H1v-3h3v3zM1 4V1h3v3H1z"/>
+                </svg>
+            </button>
+            </div>
         </div>
+
+        <!--TODO MAIN CONTENT -->
+
+        <!--! TRENDING NOW -->
+        <div class="row mt-5">
+            <div class="col-12"><h3>Trending Now</h3></div>
+            <div class="col">
+                <div id="carouselTrendingControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active text-center">
+                            <img src="assets/media/media12.jpg" class="d-inline" width="227" alt="Trending Now Film 1">
+                            <img src="assets/media/media11.jpg" class="d-inline" width="227" alt="Trending Now Film 2">
+                            <img src="assets/media/media1.jpg" class="d-inline" width="227" alt="Trending Now Film 3">
+                            <img src="assets/media/media2.webp" class="d-inline" width="227" alt="Trending Now Film 4">
+                            <img src="assets/media/media3.webp" class="d-inline" width="227" alt="Trending Now Film 5">
+                            <img src="assets/media/media4.jpg" class="d-inline" width="227" alt="Trending Now Film 6">
+                        </div>
+                        <div class="carousel-item text-center">
+                                <img src="assets/media/media5.webp" class="d-inline" width="227" alt="Trending Now Film 7">
+                                <img src="assets/media/media6.jpg" class="d-inline" width="227" alt="Trending Now Film 8">
+                                <img src="assets/media/media7.webp" class="d-inline" width="227" alt="Trending Now Film 9">
+                                <img src="assets/media/media8.webp" class="d-inline" width="227" alt="Trending Now Film 10">
+                                <img src="assets/media/media9.jpg" class="d-inline" width="227" alt="Trending Now Film 11">
+                                <img src="assets/media/media10.jpg" class="d-inline" width="227" alt="Trending Now Film 12">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTrendingControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselTrendingControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div> 
+        </div>
+        <!--! WATCH IT AGAIN -->
+        <div class="row mt-5">
+            <div class="col-12"><h3>Whatch it Again</h3></div>
+            <div class="col">
+                <div id="carouselWatchControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active text-center">
+                            <img src="assets/media/media13.jpg" class="d-inline" width="227" alt="Whatch it Again Film 1">
+                            <img src="assets/media/media14.webp" class="d-inline" width="227" alt="Whatch it Again Film 2">
+                            <img src="assets/media/media15.jpg" class="d-inline" width="227" alt="Whatch it Again Film 3">
+                            <img src="assets/media/media16.webp" class="d-inline" width="227" alt="Whatch it Again Film 4">
+                            <img src="assets/media/media17.jpg" class="d-inline" width="227" alt="Whatch it Again Film 5">
+                            <img src="assets/media/media18.jpg" class="d-inline" width="227" alt="Whatch it Again Film 6">
+                        </div>
+                        <div class="carousel-item text-center">
+                                <img src="assets/media/media24.jpg" class="d-inline" width="227" alt="Whatch it Again Film 7">
+                                <img src="assets/media/media25.webp" class="d-inline" width="227" alt="Whatch it Again Film 8">
+                                <img src="assets/media/media26.webp" class="d-inline" width="227" alt="Whatch it Again Film 9">
+                                <img src="assets/media/media27.jpg" class="d-inline" width="227" alt="Whatch it Again Film 10">
+                                <img src="assets/media/media28.jpg" class="d-inline" width="227" alt="Whatch it Again Film 11">
+                                <img src="assets/media/media29.jpg" class="d-inline" width="227" alt="Whatch it Again Film 12">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselWatchControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselWatchControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div> 
+        </div>
+        <!--! NEW RELEASES -->
+        <div class="row mt-5">
+            <div class="col-12"><h3>New Releases</h3></div>
+            <div class="col">
+                <div id="carouselReleasesControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active text-center">
+                            <img src="assets/media/media19.webp" class="d-inline" width="227" alt="Trending Now Film 1">
+                            <img src="assets/media/media20.jpg" class="d-inline" width="227" alt="Trending Now Film 2">
+                            <img src="assets/media/media21.webp" class="d-inline" width="227" alt="Trending Now Film 3">
+                            <img src="assets/media/media22.webp" class="d-inline" width="227" alt="Trending Now Film 4">
+                            <img src="assets/media/media23.webp" class="d-inline" width="227" alt="Trending Now Film 5">
+                            <img src="assets/media/media30.jpg" class="d-inline" width="227" alt="Trending Now Film 6">
+                        </div>
+                        <div class="carousel-item text-center">
+                                <img src="assets/media/media5.webp" class="d-inline" width="227" alt="Trending Now Film 7">
+                                <img src="assets/media/media6.jpg" class="d-inline" width="227" alt="Trending Now Film 8">
+                                <img src="assets/media/media7.webp" class="d-inline" width="227" alt="Trending Now Film 9">
+                                <img src="assets/media/media8.webp" class="d-inline" width="227" alt="Trending Now Film 10">
+                                <img src="assets/media/media9.jpg" class="d-inline" width="227" alt="Trending Now Film 11">
+                                <img src="assets/media/media10.jpg" class="d-inline" width="227" alt="Trending Now Film 12">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselReleasesControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselReleasesControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div> 
+        </div>
+
     </div>
+    
+    <!--! FOOTER -->
+    <footer>
+
+    </footer>
+
     
 
 
