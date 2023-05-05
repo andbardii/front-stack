@@ -1,0 +1,17 @@
+body {
+  background-color: #141414;
+}
+
+nav {
+  background-color: #141414;
+}
+nav a:hover {
+  color: white !important;
+}
+
+footer {
+  background-color: #141414;
+}
+footer button:hover {
+  color: white !important;
+}/*# sourceMappingURL=style.css.map */

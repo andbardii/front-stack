@@ -1,0 +1,1 @@
+{"version":3,"sources":["partials/_reset.scss","partials/_variabili.scss","style.css","partials/_header.scss","partials/_footer.scss"],"names":[],"mappings":"AAAA;EACI,yBCDS;ACEb;;ACFA;EACI,yBFDS;ACMb;ACHQ;EACI,uBAAA;ADKZ;;AETA;EACI,yBHDS;ACab;AEVQ;EACI,uBAAA;AFYZ","file":"style.css"}
