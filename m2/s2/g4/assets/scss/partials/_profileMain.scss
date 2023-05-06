@@ -1,0 +1,9 @@
+body{
+    background-color: $body-color;
+    nav{
+        background-image: linear-gradient(black, $body-color);
+    }
+    // input.form-check-input{
+    //     $form-check-input-focus-box-shadow: lightgrey !important;  
+    // }
+}

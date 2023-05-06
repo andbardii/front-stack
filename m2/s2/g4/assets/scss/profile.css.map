@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"profile.css"}
+{"version":3,"sources":["partials/_profileMain.scss","partials/_variabili.scss","profile.css"],"names":[],"mappings":"AAAA;EACI,yBCDS;ACEb;AFAI;EACI,iDAAA;AEER","file":"profile.css"}

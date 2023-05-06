@@ -1,5 +1,5 @@
 footer{
-    background-color: $body-color;
+    background-image: linear-gradient($body-color, black);
     button{
         &:hover{
             color: white !important;
