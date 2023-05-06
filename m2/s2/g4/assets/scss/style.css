@@ -15,7 +15,9 @@ nav a:hover {
   cursor: pointer !important;
 }
 #main img:hover {
+  position: relative !important;
   scale: 1.2 !important;
+  z-index: 1 !important;
 }
 
 footer {
