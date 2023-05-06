@@ -3,4 +3,7 @@ body {
 }
 body nav {
   background-image: linear-gradient(black, #141414);
+}
+body div.name {
+  color: grey !important;
 }/*# sourceMappingURL=accouts.css.map */
