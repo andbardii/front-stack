@@ -1,3 +1,10 @@
 body{
-    background-color: $body-color;
+    nav{
+        background-color: $body-color;
+    }
+    main{
+        .thatGrey{
+            background-color: lightgrey;
+        }
+    }
 }
