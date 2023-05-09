@@ -1,0 +1,32 @@
+.inputZone{
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+.input{
+    padding: 5px 15px;
+    border-radius: none;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+.button{
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    margin: auto 10px;
+}
+.memorize{
+    background-color: rgb(128, 213, 0);
+}
+.memorize:hover{
+    background-color: green;
+    color: white;
+}
+.delete{
+    background-color: rgb(255, 96, 96);
+}
+.delete:hover{
+    background-color: darkred;
+    color: white;
+}
