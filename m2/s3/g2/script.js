@@ -21,6 +21,7 @@ function saveNames(e){
     // JSON è un metodo complesso delle local storge
     localStorage.setItem('Name:', JSON.stringify(namesArray));
     namesArray.push(completeName.value);
+    localStorage.setItem('Name:', JSON.stringify(namesArray));
     target.textContent = namesArray[namesArray.length - 1];
     // RESET toglie visibilità
     document.querySelector('form').reset();
