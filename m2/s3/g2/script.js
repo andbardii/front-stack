@@ -17,11 +17,12 @@ memorizeButton.addEventListener("click", saveNames)
 
 function saveNames(e){
     e.preventDefault();
-    // stringify rende il tipo di dato una stringa
+    // STRINGIFY rende il tipo di dato una stringa
     // JSON è un metodo complesso delle local storge
     localStorage.setItem('Name:', JSON.stringify(namesArray));
     namesArray.push(completeName.value);
     target.textContent = namesArray[namesArray.length - 1];
+    // RESET toglie visibilità
     document.querySelector('form').reset();
 }
 
@@ -29,7 +30,7 @@ function saveNames(e){
 deleteButton.addEventListener('click', cancelNames);
 
 function cancelNames() {
-    // parse riporta all'origine il tipo di dato
+    // PARSE riporta all'origine il tipo di dato
     let namesArray = JSON.parse(localStorage.getItem('Name:'));
     namesArray.pop();
     localStorage.setItem('Name:', JSON.stringify(namesArray));
