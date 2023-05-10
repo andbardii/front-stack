@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Memorize Names</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-    <header>
+      <header>
         <h1>SAVE THE NAMES</h1>
         <p>Salva i nomi che non vuoi scordare!</p>
-    </header>
+      </header>
 
-    <main>
+      <main>
         <!-- INPUT ZONE -->
         <div>
-            <form class="inputZone">
-                <input id="input" type="text" placeholder="Write here your name">
-                <button id="memorizeButton" class="button memorize">MEMORIZZA</button>
-                <button id="deleteButton" class="button delete">CANCELLA</button>
-            </form>
+          <form class="inputZone">
+            <input id="input" type="text" placeholder="Write here your name" />
+            <button id="memorizeButton" class="button memorize">
+              MEMORIZZA
+            </button>
+            <button id="deleteButton" class="button delete">CANCELLA</button>
+          </form>
         </div>
 
         <!-- CONTATTI SALVATI -->
         <div class="addFlexCenter">
-            <h2>L'ultimo nome che hai salvato:</h2>
+          <h2>L'ultimo nome che hai salvato:</h2>
         </div>
-        
+
         <div class="addFlexCenter">
-            <p id="target"></p>
+          <p id="target"></p>
         </div>
+      </main>
 
-    </main>
-
-    <footer>
+      <footer>
         <p>Grazie per AVER SALVATO IL TUO NOME!</p>
         <p>(questo è uno strumento di grande utilità)</p>
-    </footer>
+      </footer>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
