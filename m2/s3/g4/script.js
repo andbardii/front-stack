@@ -34,9 +34,9 @@ const apiKey = "pnt99hreaswyQpJQyr9Yg7iZY8CBUC2fLSQX5AzbYxF5tThSLdJ1uu9c"
 const firstLoad = function (images){
         images = images.slice(0,9)
         let row = document.getElementById("target")
-        row.innerHTML = ""
         let firstLoadButton = document.getElementById("loadImages")
         firstLoadButton.addEventListener("click", () => {
+        row.innerHTML = ""
         images.forEach((image) => {
         let newCard = document.createElement("div")
         newCard.classList.add("col-md-4")
@@ -70,9 +70,9 @@ const firstLoad = function (images){
 const secondLoad = function (images){
     images = images.slice(0,9)
     let row = document.getElementById("target")
-    row.innerHTML = ""
     let secondLoadButton = document.getElementById("loadSecondaryImages")
     secondLoadButton.addEventListener("click", () => {
+    row.innerHTML = ""
     images.forEach((image) => {
     let newCard = document.createElement("div")
     newCard.classList.add("col-md-4")
