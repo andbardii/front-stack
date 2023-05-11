@@ -54,11 +54,11 @@ const firstLoad = function (images){
                 <button type="button" class="btn btn-sm btn-outline-secondary">
                   View
                 </button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">
-                  Edit
+                <button type="button" class="btn btn-sm btn-outline-secondary" onclick="hideCol(this)>
+                  Hide
                 </button>
               </div>
-              <small class="text-muted">9 mins</small>
+              <small class="text-muted">${image.id}</small>
             </div>
           </div>
         </div>`
@@ -86,19 +86,24 @@ const secondLoad = function (images){
             <a href="${image.photographer_url}"><b>${image.photographer}</b></a>
         </p>
         <div class="d-flex justify-content-between align-items-center">
-          <div class="btn-group">
-            <button type="button" class="btn btn-sm btn-outline-secondary">
-              View
-            </button>
-            <button type="button" class="btn btn-sm btn-outline-secondary">
-              Edit
-            </button>
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary">
+                  View
+                </button>
+                <button type="button" class="btn btn-sm btn-outline-secondary" onclick="hideCol(this)>
+                  Hide
+                </button>
+              </div>
+              <small class="text-muted">${image.id}</small>
+            </div>
           </div>
-          <small class="text-muted">9 mins</small>
-        </div>
-      </div>
-    </div>`
+        </div>`
     row.appendChild(newCard)
     })
 })
+}
+
+const hideCol = function (context){
+    let colToDelete = context.closest(".col-md-4")
+    colToDelete.remove()
 }
