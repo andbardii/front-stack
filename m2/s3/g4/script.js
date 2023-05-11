@@ -42,7 +42,7 @@ const firstLoad = function (images){
         newCard.classList.add("col-md-4")
         newCard.innerHTML = `
         <div class="card mb-4 shadow-sm">
-          <img src="${image.src.portrait}" alt="Image" class="bd-placeholder-img card-img-top" width=100%" height="70%">
+        <img src="${image.src.portrait}" alt="Image" class="bd-placeholder-img card-img-top" width=100%" height="70%">
           <div class="card-body">
             <h5 class="card-title">${image.alt}</h5>
             <p class="card-text">
