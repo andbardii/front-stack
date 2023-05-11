@@ -46,7 +46,6 @@ const firstLoad = function (images){
           <div class="card-body">
             <h5 class="card-title">${image.alt}</h5>
             <p class="card-text">
-                ${image.photographer_id}
                 <a href="${image.photographer_url}"><b>${image.photographer}</b></a>
             </p>
             <div class="d-flex justify-content-between align-items-center">
@@ -54,7 +53,7 @@ const firstLoad = function (images){
                 <button type="button" class="btn btn-sm btn-outline-secondary">
                   View
                 </button>
-                <button type="button" class="btn btn-sm btn-outline-secondary" onclick="hideCol(this)>
+                <button type="button" class="btn btn-sm btn-outline-secondary" onclick="hideCol(this)">
                   Hide
                 </button>
               </div>
@@ -82,22 +81,21 @@ const secondLoad = function (images){
       <div class="card-body">
         <h5 class="card-title">${image.alt}</h5>
         <p class="card-text">
-            ${image.photographer_id}
             <a href="${image.photographer_url}"><b>${image.photographer}</b></a>
         </p>
         <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">
-                  View
-                </button>
-                <button type="button" class="btn btn-sm btn-outline-secondary" onclick="hideCol(this)>
-                  Hide
-                </button>
-              </div>
-              <small class="text-muted">${image.id}</small>
-            </div>
+          <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-outline-secondary">
+              View
+            </button>
+            <button type="button" class="btn btn-sm btn-outline-secondary" onclick="hideCol(this)">
+              Hide
+            </button>
           </div>
-        </div>`
+          <small class="text-muted">${image.id}</small>
+        </div>
+      </div>
+    </div>`
     row.appendChild(newCard)
     })
 })
