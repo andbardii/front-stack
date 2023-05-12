@@ -26,12 +26,15 @@ const renderImages = function (images){
     images.forEach(image => {
         let newCardProduct = document.createElement("div")
         newCardProduct.classList.add("card", "text-center", "mb-3", "w-25")
-        newCardProduct.innerHTML = `<img src="${image.imageUrl}" class="card-img-top" alt="Foto Prodotto">
+        newCardProduct.innerHTML = `<img src="${image.imageUrl}" class="card-img-top" alt="Foto Prodotto" height="100%">
                                     <div class="card-body">
                                         <h5 class="card-title">${image.name}</h5>
+                                        <div class="d-flex flex-column justify-content-between">
                                         <p class="card-text">${image.description}</p>
                                         <a href="#" class="btn btn-outline-danger">BUY</a>
-                                        <a href="(details/details.html?id=${image._id})" class="btn btn-outline-primary">DETAILS</a>
+                                        <a href="#" class="btn btn-outline-warning my-2">DETAILS</a>
+                                        <a href="./office/office.html?productId=${image._id}" class="btn btn-outline-primary">MODIFICA</a>
+                                        </div>
                                      </div> `
         rowReference.appendChild(newCardProduct)
     });

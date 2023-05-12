@@ -1,5 +1,13 @@
 const endpoint = "https://striveschool-api.herokuapp.com/api/product/"
 
+let addressBarContent = new URLSearchParams(window.location.search)
+let productId = addressBarContent.get('productId')
+
+if (productId){
+    document.getElementById("officeTitle").innerText = "Backoffice page - Nuovo Prodotto"
+    document.getElementById("save-button").innerText = "MODIFICA PRODOTTO"
+
+}
 
 //! MODELLO PRODOTTO
 // {
@@ -15,20 +23,7 @@ const endpoint = "https://striveschool-api.herokuapp.com/api/product/"
 //     "__v": 0 //SERVER GENERATED
 // }
 
-fetch(endpoint, {headers: {"Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDVlMTQ4NTg4Zjc0MDAwMTQyODc1OTkiLCJpYXQiOjE2ODM4ODcyMzcsImV4cCI6MTY4NTA5NjgzN30.hgJHWP6lWcscbBf5TfsPRQmgqwE4aNrVJx-hNBKqROQ"}})
-.then((res) =>{
-    if (res.ok){
-        return res.json()
-    }else{
-        throw new Error("1) ERRORE NEL CONTATTARE IL SERVER")
-    }
-})
-.then((data) =>{
-    console.log(data)
-})
-.catch((err) =>{
-    console.log(err)
-})
+
 
 const eventForm = document.getElementById('event-form')
 eventForm.addEventListener('submit', function (e) {
@@ -49,8 +44,8 @@ eventForm.addEventListener('submit', function (e) {
     }
     console.log("QUESTO DOVREBBE ESSERE IL NUOVO PRODOTTO DA POSTARE", newProduct)
 
-    fetch(endpoint, {
-        method: "POST",
+    fetch(productId ? endpoint + productId : endpoint, {
+        method: productId ? "PUT" : "POST",
         body: JSON.stringify(newProduct),
         headers: {
             Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDVlMTQ4NTg4Zjc0MDAwMTQyODc1OTkiLCJpYXQiOjE2ODM4ODcyMzcsImV4cCI6MTY4NTA5NjgzN30.hgJHWP6lWcscbBf5TfsPRQmgqwE4aNrVJx-hNBKqROQ",
@@ -59,7 +54,7 @@ eventForm.addEventListener('submit', function (e) {
     })
     .then((res)=> {
         if(res.ok){
-            alert("SALVATAGGIO COMPLETATO CON SUCCESSO")
+            alert(productId ? "MODIFICA COMPLETATA CON SUCCESSO" : "SALVATAGGIO COMPLETATO CON SUCCESSO")
             console.log(res)
             location.assign('../../index.html')
         }else{
@@ -72,4 +67,24 @@ eventForm.addEventListener('submit', function (e) {
     })
 })
       
+fetch(endpoint + productId, 
+    {headers: {"Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDVlMTQ4NTg4Zjc0MDAwMTQyODc1OTkiLCJpYXQiOjE2ODM4ODcyMzcsImV4cCI6MTY4NTA5NjgzN30.hgJHWP6lWcscbBf5TfsPRQmgqwE4aNrVJx-hNBKqROQ"}})
+.then((res) =>{
+    if (res.ok){
+        return res.json()
+    }else{
+        throw new Error("5) ERRORE NEL CONTATTARE IL SERVER")
+    }
+})
+.then((data) =>{
+    console.log(data)
+    document.getElementById("name").value = data.name
+    document.getElementById("description").value = data.description
+    document.getElementById("brand").value = data.brand
+    document.getElementById("image").value = data.imageUrl
+    document.getElementById("price").value = data.price
+})
+.catch((err) =>{
+    console.log(err)
+})
       
