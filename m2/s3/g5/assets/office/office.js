@@ -1,5 +1,6 @@
 const endpoint = "https://striveschool-api.herokuapp.com/api/product/"
 
+
 //! MODELLO PRODOTTO
 // {
 //     "_id": "5d318e1a8541744830bef139", //SERVER GENERATED
@@ -41,7 +42,7 @@ eventForm.addEventListener('submit', function (e) {
 
     let newProduct = {
         name: productName.value,
-        decription: productDescription.value,
+        description: productDescription.value,
         brand: productBrand.value,
         imageUrl: productImage.value,
         price: productPrice.value,
@@ -52,13 +53,14 @@ eventForm.addEventListener('submit', function (e) {
         method: "POST",
         body: JSON.stringify(newProduct),
         headers: {
-            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDVlMTQ4NTg4Zjc0MDAwMTQyODc1OTkiLCJpYXQiOjE2ODM4ODcyMzcsImV4cCI6MTY4NTA5NjgzN30.hgJHWP6lWcscbBf5TfsPRQmgqwE4aNrVJx-hNBKqROQ", 
-            "Content-Type": "application/json"
-        }
+            Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDVlMTQ4NTg4Zjc0MDAwMTQyODc1OTkiLCJpYXQiOjE2ODM4ODcyMzcsImV4cCI6MTY4NTA5NjgzN30.hgJHWP6lWcscbBf5TfsPRQmgqwE4aNrVJx-hNBKqROQ",
+            "Content-Type": "application/json",
+        },
     })
     .then((res)=> {
         if(res.ok){
             alert("SALVATAGGIO COMPLETATO CON SUCCESSO")
+            console.log(res)
             location.assign('../../index.html')
         }else{
             alert("ERRORE NEL SALVATAGGIO")
@@ -69,3 +71,5 @@ eventForm.addEventListener('submit', function (e) {
         console.log(err)
     })
 })
+      
+      
