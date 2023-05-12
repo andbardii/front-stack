@@ -7,6 +7,25 @@ if (productId){
     document.getElementById("officeTitle").innerText = "Backoffice page - Nuovo Prodotto"
     document.getElementById("save-button").innerText = "MODIFICA PRODOTTO"
 
+    let deleteButton = document.getElementById("delete-button")
+    deleteButton.classList.remove("d-none")
+    deleteButton.addEventListener("click", function(){
+        fetch(endpoint + productId, {
+            method: "DELETE",
+            headers:{Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDVlMTQ4NTg4Zjc0MDAwMTQyODc1OTkiLCJpYXQiOjE2ODM4ODcyMzcsImV4cCI6MTY4NTA5NjgzN30.hgJHWP6lWcscbBf5TfsPRQmgqwE4aNrVJx-hNBKqROQ" }
+        })
+        .then((res)=>{
+            if(res.ok){
+                alert("PRODOTTO ELIMINATO CON SUCCESSO")
+                location.assign("../../index.html")
+            }else{
+                throw new Error("6) ERRORE NELL'ELIMINAZIONE DEL PRODOTTO")
+            }
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
+    })
 }
 
 //! MODELLO PRODOTTO

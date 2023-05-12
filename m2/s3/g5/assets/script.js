@@ -33,7 +33,7 @@ const renderImages = function (images){
                                         <p class="card-text">${image.description}</p>
                                         <a href="#" class="btn btn-outline-danger">BUY</a>
                                         <a href="#" class="btn btn-outline-warning my-2">DETAILS</a>
-                                        <a href="./office/office.html?productId=${image._id}" class="btn btn-outline-primary">MODIFICA</a>
+                                        <a href="assets/office/office.html?productId=${image._id}" class="btn btn-outline-primary">MODIFICA</a>
                                         </div>
                                      </div> `
         rowReference.appendChild(newCardProduct)
