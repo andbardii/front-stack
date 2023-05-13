@@ -24,11 +24,11 @@ const renderImages = function (images){
     let rowReference = document.getElementById("trending")
     let basket = document.getElementById("dropTarget")
     let totalPriceTarget = document.getElementById("totalPriceTarget")
-    let totalPrice = 0
+    let totalPrice 
 
     images.forEach(image => {
         let newCardProduct = document.createElement("div")
-        newCardProduct.classList.add("card", "col-3", "text-center", "mb-3", "border-0")
+        newCardProduct.classList.add("card", "col-12","col-md-6","col-lg-4", "col-xxl-3", "text-center", "mb-3", "border-0")
         newCardProduct.innerHTML = `<img src="${image.imageUrl}" class="card-img-top" alt="Foto Prodotto" height="100%">
                                     <div class="card-body">
                                         <h5 class="card-title">${image.name}</h5>
@@ -44,8 +44,7 @@ const renderImages = function (images){
         
         let buyButton = newCardProduct.querySelector("#buyButton")
         buyButton.addEventListener("click", function () {
-            let price = `${image.price}`
-            totalPrice = totalPrice + price
+            totalPrice = totalPrice + image.price
             let basketItem = document.createElement("li")
             basketItem.innerHTML = `
             <a class="dropdown-item ps-0" href="#">
