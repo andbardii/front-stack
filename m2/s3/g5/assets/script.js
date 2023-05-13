@@ -22,23 +22,48 @@ const getProducts = function(){
 
 const renderImages = function (images){
     let rowReference = document.getElementById("trending")
+    let basket = document.getElementById("dropTarget")
+    let totalPriceTarget = document.getElementById("totalPriceTarget")
+    let totalPrice = 0
 
     images.forEach(image => {
         let newCardProduct = document.createElement("div")
-        newCardProduct.classList.add("card", "text-center", "mb-3", "w-25")
+        newCardProduct.classList.add("card", "col-3", "text-center", "mb-3", "border-0")
         newCardProduct.innerHTML = `<img src="${image.imageUrl}" class="card-img-top" alt="Foto Prodotto" height="100%">
                                     <div class="card-body">
                                         <h5 class="card-title">${image.name}</h5>
                                         <div class="d-flex flex-column justify-content-between">
                                         <p class="card-text">${image.description}</p>
-                                        <a href="#" class="btn btn-outline-danger">BUY</a>
-                                        <a href="#" class="btn btn-outline-warning my-2">DETAILS</a>
+                                        <button id="buyButton"class="btn btn-outline-danger">BUY - ${image.price}$</button>
+                                        <a href="assets/details/details.html?productId=${image._id}" class="btn btn-outline-warning my-2">DETAILS</a>
                                         <a href="assets/office/office.html?productId=${image._id}" class="btn btn-outline-primary">MODIFICA</a>
                                         </div>
                                      </div> `
+
+        totalPriceTarget.innerHTML = `Total: ${totalPrice}$`
+        
+        let buyButton = newCardProduct.querySelector("#buyButton")
+        buyButton.addEventListener("click", function () {
+            let price = `${image.price}`
+            totalPrice = totalPrice + price
+            let basketItem = document.createElement("li")
+            basketItem.innerHTML = `
+            <a class="dropdown-item ps-0" href="#">
+                <div class="d-flex">
+                <img src="${image.imageUrl}" class="w-50 h-50" alt="Foto Prodotto">
+                    <div class="d-flex flex-column align-items-end justify-content-start ps-2 flex-grow-1">
+                        <p class="fw-bold mb-0">${image.name}</p>
+                        <p class="mb-0">${image.price}$</p>
+                    </div>
+                </div>
+            </a>
+            `
+            basket.appendChild(basketItem)
+        })
         rowReference.appendChild(newCardProduct)
     });
 }
+
 
 window.onload = () => {
     getProducts()
