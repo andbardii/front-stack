@@ -24,7 +24,7 @@ const renderImages = function (images){
     let rowReference = document.getElementById("trending")
     let basket = document.getElementById("dropTarget")
     let totalPriceTarget = document.getElementById("totalPriceTarget")
-    let totalPrice 
+    let totalPrice = 0
 
     images.forEach(image => {
         let newCardProduct = document.createElement("div")
@@ -39,7 +39,6 @@ const renderImages = function (images){
                                         <a href="assets/office/office.html?productId=${image._id}" class="btn btn-outline-primary">MODIFICA</a>
                                         </div>
                                      </div> `
-
         totalPriceTarget.innerHTML = `Total: ${totalPrice}$`
         
         let buyButton = newCardProduct.querySelector("#buyButton")
@@ -58,6 +57,7 @@ const renderImages = function (images){
             </a>
             `
             basket.appendChild(basketItem)
+            totalPriceTarget.innerHTML = `Total: ${totalPrice}$`
         })
         rowReference.appendChild(newCardProduct)
     });
