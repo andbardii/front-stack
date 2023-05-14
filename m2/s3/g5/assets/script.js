@@ -39,6 +39,7 @@ const renderImages = function (images){
                                         <a href="assets/office/office.html?productId=${image._id}" class="btn btn-outline-primary">MODIFICA</a>
                                         </div>
                                      </div> `
+       
         totalPriceTarget.innerHTML = `Total: ${totalPrice}$`
         
         let buyButton = newCardProduct.querySelector("#buyButton")

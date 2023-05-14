@@ -106,4 +106,9 @@ fetch(endpoint + productId,
 .catch((err) =>{
     console.log(err)
 })
-      
+
+let resetForm = document.getElementById("reset-form")
+resetForm.addEventListener("click", function(e){
+    e.preventDefault()
+    eventForm.reset()
+})
