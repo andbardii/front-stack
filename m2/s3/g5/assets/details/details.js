@@ -26,14 +26,12 @@ const getProduct = function(){
 const displayDetails = function(prodotto){
     let target = document.getElementById("detailTarget")
     target.innerHTML = `
-        <div class="col-8">
+        <div class="col-12 col-md-8">
         <img src="${prodotto.imageUrl}" class="card-img" alt="Foto Prodotto">
         </div>
-
-        <div class="col-4 d-flex flex-column justify-content-center">
+        <div class="col-12 col-lg-4 d-flex flex-column justify-content-center">
         <h5 class="card-title">${prodotto.name}</h5>
         <p class="card-text">${prodotto.description}</p>
-        <a href="#" class="btn btn-danger mt-3">BUY</a>
         <a href="../office/office.html?productId=${prodotto._id}" class="btn btn-primary mt-5">MODIFICA</a>
         </div>
     `

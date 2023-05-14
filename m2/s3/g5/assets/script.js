@@ -58,6 +58,7 @@ const renderImages = function (images){
             </a>
             `
             basket.appendChild(basketItem)
+            alert("+1" +" "+ image.name +" "+ "aggiunto al carrello")
             totalPriceTarget.innerHTML = `Total: ${totalPrice}$`
         })
         rowReference.appendChild(newCardProduct)
