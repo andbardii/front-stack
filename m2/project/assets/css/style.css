@@ -1,0 +1,150 @@
+/* static elements */
+body {
+  box-sizing: border-box;
+}
+
+/* Button */
+#play-button {
+  background-color: #1fdf64;
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+#play-icon {
+  padding: 2px 0 0 2px;
+}
+
+.underline-me:hover {
+  color: lightgray !important;
+}
+
+.color-17 {
+  background-image: linear-gradient(#171717, #060606);
+  border: 0;
+}
+.color-grey {
+  color: #b2b2b2;
+}
+
+/* aside left */
+
+#new-playlist-svg {
+  background-color: gainsboro;
+  color: grey;
+}
+#Favourite-songs {
+  background: linear-gradient(to bottom right, #4015b7, #7a8c89);
+}
+#add-playlist {
+  background-color: lightgray;
+}
+#lista-salvati li {
+  margin: 0.5vh 0;
+}
+.add-height-scroll {
+  height: 60vh;
+}
+
+.add-height {
+  height: 45vh;
+}
+/* album */
+#current-album {
+  position: relative;
+  left: 30px;
+}
+.album-cover{
+  width: 105%;
+}
+/* main content */
+.navbarSvg {
+  background-color: black;
+  padding: 3px;
+  margin: 5px;
+  border-radius: 100%;
+}
+.profileLogo {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+nav {
+  z-index: 3;
+  width: 56%;
+}
+
+.btn2 {
+  border: 1px solid white;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+/* aside right */
+
+.side-icons {
+  color: #ffffff;
+}
+
+.fs-6 {
+  font-size: 13px !important;
+}
+
+/* player navbar */
+
+.row > * {
+  margin-left: 0;
+}
+.row {
+  z-index: 5;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.color-player {
+  background-color: #171717;
+}
+
+.avanzamento-bg {
+  height: 5px;
+  width: 30vw;
+}
+
+.avanzamento {
+  height: 5px;
+  width: 40%;
+}
+
+.volume-bg {
+  height: 5px;
+  width: 5vw;
+}
+
+.volume {
+  height: 5px;
+  width: 90%;
+}
+
+.dot {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.svg-hover:hover {
+  color: #ffffff;
+}
+
+.color-green{
+  color: #1fdf64;
+}
+
+.light-shadow{
+  box-shadow: 0px 0px 10px rgba(256, 256, 256, 0.3);
+}
+
+.color-dark-t{
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1))
+}

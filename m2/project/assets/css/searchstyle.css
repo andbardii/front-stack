@@ -1,0 +1,62 @@
+.enlarge{
+    width: 300px;
+}
+
+.blu{
+    background-color: rgb(1, 1, 173);
+}
+
+.red{
+    background-color: rgb(201, 27, 27);
+}
+
+.violet{
+    background-color: rgb(168, 57, 168);
+}
+
+.gray{
+    background-color: rgb(156, 145, 145);
+}
+
+.green{
+    background-color: rgb(33, 131, 33);
+}
+
+.yellow{
+    background-color: rgb(214, 167, 38);
+}
+
+.teal{
+    background-color: teal;
+}
+
+.brown{
+    background-color: rgb(116, 29, 29);
+}
+
+.textArea{
+    z-index: 1;
+}
+
+.rotation{
+    rotate: 30deg;
+    width: 60%;
+    position: absolute;
+    left: 48%;
+    top: 50%;
+    box-shadow: -2px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+.dimensions{
+    height: 160px;
+}
+.search-hover:hover{
+    background-color: #202020 !important;
+}
+.search-hover:hover svg{
+    fill: #b2b2b2;
+}
+
+.add-height-search{
+    height: 45vh;
+}

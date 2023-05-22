@@ -1,0 +1,18 @@
+#artistImage {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: top 5vh !important;
+  width: 105%;
+  height: 55vh;
+}
+.artistName {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+.spunta {
+  width: 3%;
+}
+.sottotitoli {
+  font-size: 2rem;
+  font-weight: bold;
+}
