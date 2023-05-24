@@ -27,9 +27,19 @@ var LavoratoreAutonomo = /** @class */ (function () {
 //* CLASSE MURATORE
 var MuratoreAutonomo = /** @class */ (function (_super) {
     __extends(MuratoreAutonomo, _super);
-    function MuratoreAutonomo(redditoAnnuoLordo) {
-        return _super.call(this, 0.3, redditoAnnuoLordo, 0.1, 0.12, "Muratore") || this;
+    function MuratoreAutonomo(redditoAnnuoLordo, mattoni) {
+        var _this = _super.call(this, 0.3, redditoAnnuoLordo, 0.1, 0.12, "Muratore") || this;
+        _this.mattoni = mattoni;
+        return _this;
     }
+    MuratoreAutonomo.prototype.beiMattoni = function () {
+        if (this.mattoni >= 50000) {
+            console.log("COMPLIMENTI HAI USATO TANTI MATTONI");
+        }
+        else {
+            console.log("POCHI MATTONI, POTEVI FARE DI MEGLIO");
+        }
+    };
     MuratoreAutonomo.prototype.getUtileTasse = function () {
         return this.redditoAnnuoLordo * this.codRedd;
     };
@@ -41,11 +51,19 @@ var MuratoreAutonomo = /** @class */ (function (_super) {
     };
     MuratoreAutonomo.prototype.getRedditoAnnuoNetto = function () {
         var redditoNetto = this.redditoAnnuoLordo - this.getTasselnps() - this.getTasselrpef();
+        this.beiMattoni();
         console.log("IL TUO REDDITO NETTO:");
         console.log(redditoNetto + "$");
     };
     return MuratoreAutonomo;
 }(LavoratoreAutonomo));
+// NEW MURATORE AUTONOMO
+var AlfredoMuratoreAutonomo = new MuratoreAutonomo(90000, 400);
+console.log("Data la professione di: " + AlfredoMuratoreAutonomo.professione);
+console.log("Con un reddito lordo di: " + AlfredoMuratoreAutonomo.redditoAnnuoLordo);
+AlfredoMuratoreAutonomo.getRedditoAnnuoNetto();
+console.log("Hai pagato all'INPS: " + AlfredoMuratoreAutonomo.getTasselnps() + "$");
+console.log("Hai pagato per l'IRPEF: " + AlfredoMuratoreAutonomo.getTasselrpef() + "$");
 //* CLASSE INFORMATICO 
 var InformaticoAutonomo = /** @class */ (function (_super) {
     __extends(InformaticoAutonomo, _super);
@@ -70,13 +88,6 @@ var InformaticoAutonomo = /** @class */ (function (_super) {
     };
     return InformaticoAutonomo;
 }(LavoratoreAutonomo));
-// NEW MURATORE AUTONOMO
-var AlfredoMuratoreAutonomo = new MuratoreAutonomo(90000);
-console.log("Data la professione di: " + AlfredoMuratoreAutonomo.professione);
-console.log("Con un reddito lordo di: " + AlfredoMuratoreAutonomo.redditoAnnuoLordo);
-AlfredoMuratoreAutonomo.getRedditoAnnuoNetto();
-console.log("Hai pagato all'INPS: " + AlfredoMuratoreAutonomo.getTasselnps() + "$");
-console.log("Hai pagato per l'IRPEF: " + AlfredoMuratoreAutonomo.getTasselrpef() + "$");
 // NEW INFORMATICO AUTONOMO
 var GiovanniInformaticoAutonomo = new InformaticoAutonomo(70000);
 console.log("Data la professione di: " + GiovanniInformaticoAutonomo.professione);
