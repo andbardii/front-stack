@@ -18,6 +18,9 @@ var Capo = /** @class */ (function () {
         console.log('%cMOSTRA PRODOTTO', 'color: orange');
         console.log("NOME: " + this.capo);
         console.log("Prezzo con IVA: %c" + +this.prezzoivainclusa + "$", 'color: red');
+        var prezzoScontato = Math.floor(this.prezzoivainclusa - (this.prezzoivainclusa * (this.saldo / 100)));
+        console.log("SCONTO: %c" + this.saldo + "$", 'color: lightgreen');
+        console.log("Prezzo scontato: %c" + +prezzoScontato + "$", 'color: green');
     };
     return Capo;
 }());
@@ -32,7 +35,7 @@ fetch("assets/Abbigliamento.json")
     }
 })
     .then(function (res) {
-    console.warn("ARRAY DELLA FETCH");
+    console.log("%cARRAY DELLA FETCH", "color: yellow");
     console.log(res);
     handlePage(res);
 })
@@ -46,6 +49,6 @@ var handlePage = function (capi) {
         nuovoArray.push(nuovoCapo);
         console.log(nuovoCapo);
     });
-    console.warn("NUOVO ARRAY TIPIZZATO");
+    console.log("%cARRAY INSTANZIATO", "color: yellow");
     console.log(nuovoArray);
 };

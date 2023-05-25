@@ -33,6 +33,10 @@ class Capo{
         console.log('%cMOSTRA PRODOTTO', 'color: orange');
         console.log("NOME: " + this.capo)
         console.log("Prezzo con IVA: %c" + + this.prezzoivainclusa + "$", 'color: red')
+
+        let prezzoScontato = Math.floor(this.prezzoivainclusa - (this.prezzoivainclusa * (this.saldo / 100)))
+        console.log("SCONTO: %c" + this.saldo + "%", 'color: lightgreen')
+        console.log("Prezzo scontato: %c" + + prezzoScontato + "$", 'color: green')
     }
 
 }
@@ -47,7 +51,7 @@ fetch("assets/Abbigliamento.json")
     }
 })
 .then((res) => {
-    console.warn("ARRAY DELLA FETCH")
+    console.log("%cARRAY DELLA FETCH", "color: yellow")
     console.log(res)
     handlePage(res)
 })
@@ -77,6 +81,6 @@ const handlePage = function(capi:[]){
         console.log(nuovoCapo)
     })
 
-    console.warn("NUOVO ARRAY TIPIZZATO")
+    console.log("%cARRAY INSTANZIATO", "color: yellow")
     console.log(nuovoArray)
 }
