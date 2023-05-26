@@ -21,3 +21,9 @@ body{
 #chiamate{
     height: 330px;
 }
+#home-button{
+    background-color: white;
+}
+#home-button:hover{
+    background-color: lightgray;
+}
