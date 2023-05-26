@@ -129,14 +129,14 @@ phoneApp?.addEventListener("click", () =>{
     target!.innerHTML = ""
     let insidePhoneApp:HTMLElement = document.createElement("div")
     insidePhoneApp.classList.add("container-fluid", "h-100")
-    insidePhoneApp.innerHTML = `<div class="row p-2 h-50">
-                                <div class="col-12 fw-bold">${IPhone.numero404()}
-                                <div class="col-12 btn btn-success" id="btn-ricarica">RICARICA</div>
-                                <div class="col-12 btn btn-danger">CANCELLA CHIAMATE</div>
-                                </div>
-                                <div class="col-12 fw-bold text-secondary"><span>CHIAMATE EFFETTUATE: </span>${IPhone.getNumeroChiamate()}</div>
-                                <div class="col-12">
-                                <div class="row overflow-auto" id="chiamate">
+    insidePhoneApp.innerHTML = `<div class="row p-2 h-100">
+                                <div class="col-12 fw-bold" id="credito-rimasto">${IPhone.numero404()}</div>
+                                <div class="col-12 btn btn-success mb-2 shadow" id="btn-ricarica">RICARICA VELOCE (10€)</div>
+                                <div class="col-12 btn btn-danger shadow" id="btn-svuota">CANCELLA CHIAMATE</div>
+                                
+                                <div class="col-12 fw-bold text-secondary"><span>CHIAMATE EFFETTUATE: </span><span id="num-chiamate">${IPhone.getNumeroChiamate()}</span></div>
+                                <div class="col-12 h-50">
+                                <div class="row overflow-auto h-100" id="chiamate">
 
                                 </div>
                                 </div>
@@ -151,15 +151,40 @@ phoneApp?.addEventListener("click", () =>{
 
 let bottoneChiama:HTMLElement|null = insidePhoneApp.querySelector("#bottone-chiama")
 let targetChiamate:HTMLElement|null = insidePhoneApp.querySelector("#chiamate")
+let numeroChiamate:HTMLElement|null = insidePhoneApp.querySelector("#num-chiamate")
+let creditoRimasto:HTMLElement|null = insidePhoneApp.querySelector("#credito-rimasto")
+
 bottoneChiama?.addEventListener("click", () => {
+
+    numeroChiamate!.innerHTML = ""
+    numeroChiamate!.innerHTML = `${IPhone.getNumeroChiamate()}`
+
+    creditoRimasto!.innerHTML = ""
+    creditoRimasto!.innerHTML = `${IPhone.numero404()}`
 
     IPhone.chiamata(Math.floor(Math.random() * 50))
     targetChiamate!.innerHTML = ""
     IPhone.registroChiamate.forEach((call:Chiamata)=>{
         let dChiamata:HTMLElement = document.createElement("div")
         dChiamata.classList.add("col-12", "border-bottom", "border-secondary")
-        dChiamata.innerHTML =`<span class="me-2">${call.id}</span> <span class="me-2">${call.durata}</span class="me-2"> <span>${call.data}</span>`
+        dChiamata.innerHTML =`<span class="me-2 fw-bold">${call.id})</span> <span class="me-2">${call.durata}</span class="me-2"> <span>${call.data}</span>`
         targetChiamate!.appendChild(dChiamata)
     })
 })
+
+let bottoneCarica:HTMLElement|null = insidePhoneApp.querySelector("#btn-ricarica")
+bottoneCarica?.addEventListener("click", () =>{
+    IPhone.ricarica(10)
+    creditoRimasto!.innerHTML = ""
+    creditoRimasto!.innerHTML = `${IPhone.numero404()}`
 })
+
+let bottoneSvuota:HTMLElement|null = insidePhoneApp.querySelector("#btn-svuota")
+    bottoneSvuota?.addEventListener("click", () =>{
+        IPhone.azzeraChiamate()
+        numeroChiamate!.innerHTML = ""
+        numeroChiamate!.innerHTML = `${IPhone.getNumeroChiamate()}`
+        targetChiamate!.innerHTML = ""
+    })
+})
+

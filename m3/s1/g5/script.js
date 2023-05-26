@@ -99,18 +99,37 @@ phoneApp === null || phoneApp === void 0 ? void 0 : phoneApp.addEventListener("c
     target.innerHTML = "";
     var insidePhoneApp = document.createElement("div");
     insidePhoneApp.classList.add("container-fluid", "h-100");
-    insidePhoneApp.innerHTML = "<div class=\"row p-2 h-50\">\n                                <div class=\"col-12 fw-bold\">".concat(IPhone.numero404(), "\n                                <div class=\"col-12 btn btn-success\" id=\"btn-ricarica\">RICARICA</div>\n                                <div class=\"col-12 btn btn-danger\">CANCELLA CHIAMATE</div>\n                                </div>\n                                <div class=\"col-12 fw-bold text-secondary\"><span>CHIAMATE EFFETTUATE: </span>").concat(IPhone.getNumeroChiamate(), "</div>\n                                <div class=\"col-12\">\n                                <div class=\"row overflow-auto\" id=\"chiamate\">\n\n                                </div>\n                                </div>\n                                <div class=\"col-12 text-center generic-app\" id=\"bottone-chiama\">\n                                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"35\" height=\"35\" fill=\"green\" class=\"bi bi-telephone-fill\" viewBox=\"0 0 16 16\">\n                                        <path fill-rule=\"evenodd\" d=\"M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z\"/>\n                                </svg>\n                                </div>\n                                </div>\n                                ");
+    insidePhoneApp.innerHTML = "<div class=\"row p-2 h-100\">\n                                <div class=\"col-12 fw-bold\" id=\"credito-rimasto\">".concat(IPhone.numero404(), "</div>\n                                <div class=\"col-12 btn btn-success mb-2 shadow\" id=\"btn-ricarica\">RICARICA VELOCE (10\u20AC)</div>\n                                <div class=\"col-12 btn btn-danger shadow\" id=\"btn-svuota\">CANCELLA CHIAMATE</div>\n                                \n                                <div class=\"col-12 fw-bold text-secondary\"><span>CHIAMATE EFFETTUATE: </span><span id=\"num-chiamate\">").concat(IPhone.getNumeroChiamate(), "</span></div>\n                                <div class=\"col-12 h-50\">\n                                <div class=\"row overflow-auto h-100\" id=\"chiamate\">\n\n                                </div>\n                                </div>\n                                <div class=\"col-12 text-center generic-app\" id=\"bottone-chiama\">\n                                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"35\" height=\"35\" fill=\"green\" class=\"bi bi-telephone-fill\" viewBox=\"0 0 16 16\">\n                                        <path fill-rule=\"evenodd\" d=\"M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z\"/>\n                                </svg>\n                                </div>\n                                </div>\n                                ");
     target.appendChild(insidePhoneApp);
     var bottoneChiama = insidePhoneApp.querySelector("#bottone-chiama");
     var targetChiamate = insidePhoneApp.querySelector("#chiamate");
+    var numeroChiamate = insidePhoneApp.querySelector("#num-chiamate");
+    var creditoRimasto = insidePhoneApp.querySelector("#credito-rimasto");
     bottoneChiama === null || bottoneChiama === void 0 ? void 0 : bottoneChiama.addEventListener("click", function () {
+        numeroChiamate.innerHTML = "";
+        numeroChiamate.innerHTML = "".concat(IPhone.getNumeroChiamate());
+        creditoRimasto.innerHTML = "";
+        creditoRimasto.innerHTML = "".concat(IPhone.numero404());
         IPhone.chiamata(Math.floor(Math.random() * 50));
         targetChiamate.innerHTML = "";
         IPhone.registroChiamate.forEach(function (call) {
             var dChiamata = document.createElement("div");
             dChiamata.classList.add("col-12", "border-bottom", "border-secondary");
-            dChiamata.innerHTML = "<span class=\"me-2\">".concat(call.id, "</span> <span class=\"me-2\">").concat(call.durata, "</span class=\"me-2\"> <span>").concat(call.data, "</span>");
+            dChiamata.innerHTML = "<span class=\"me-2 fw-bold\">".concat(call.id, ")</span> <span class=\"me-2\">").concat(call.durata, "</span class=\"me-2\"> <span>").concat(call.data, "</span>");
             targetChiamate.appendChild(dChiamata);
         });
+    });
+    var bottoneCarica = insidePhoneApp.querySelector("#btn-ricarica");
+    bottoneCarica === null || bottoneCarica === void 0 ? void 0 : bottoneCarica.addEventListener("click", function () {
+        IPhone.ricarica(10);
+        creditoRimasto.innerHTML = "";
+        creditoRimasto.innerHTML = "".concat(IPhone.numero404());
+    });
+    var bottoneSvuota = insidePhoneApp.querySelector("#btn-svuota");
+    bottoneSvuota === null || bottoneSvuota === void 0 ? void 0 : bottoneSvuota.addEventListener("click", function () {
+        IPhone.azzeraChiamate();
+        numeroChiamate.innerHTML = "";
+        numeroChiamate.innerHTML = "".concat(IPhone.getNumeroChiamate());
+        targetChiamate.innerHTML = "";
     });
 });
