@@ -1,1 +1,12 @@
-{{posts | json}}
+<div class="row">
+  <div class="col-4 p-1" *ngFor="let post of posts">
+    <div class="card text-start">
+      <div class="card-body">
+        <h4 class="card-title">{{post.id}} - {{post.title}}</h4>
+        <p class="card-text">{{post.body}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
