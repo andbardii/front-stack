@@ -8,7 +8,7 @@ import { PostService } from 'src/app/post.service';
   styleUrls: ['./homepage.component.scss']
 })
 export class HomepageComponent {
-  posts:Post[] = [];
+posts:Post[] = [];
 constructor(private PostService: PostService){
   this.posts = PostService.getAllPosts()
 }
