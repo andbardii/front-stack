@@ -11,6 +11,7 @@ import { NavbarComponent } from './Elements/navbar/navbar.component';
 import { FooterComponent } from './Elements/footer/footer.component';
 import { MarkDirective } from './Directives/mark.directive';
 import { UppercasePipe } from './Pipes/uppercase.pipe';
+import { PostComponent } from './Pages/post/post.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { UppercasePipe } from './Pipes/uppercase.pipe';
     NavbarComponent,
     FooterComponent,
     MarkDirective,
-    UppercasePipe
+    UppercasePipe,
+    PostComponent
   ],
   imports: [
     BrowserModule,

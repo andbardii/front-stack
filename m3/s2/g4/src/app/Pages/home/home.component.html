@@ -3,11 +3,13 @@
     <div
     [ngClass]="{'bg-warning': post.type =='news', 'bg-secondary': post.type =='education', 'bg-lighmatTabLabel': post.type =='politic'}"
     class="card text-start">
-      <div class="card-body">
-        <h4 class="card-title">{{post.id}} - {{post.title}}</h4>
+    <div class="card-body">
+      <h4 class="card-text d-inline" appMark>{{post.id}}</h4>
+      <h4 class="card-title d-inline">{{post.title}}</h4>
         <p class="card-text">{{post.body}}</p>
-        <p class="card-text text-secodary">{{post.type}}</p>
-        <button class="btn btn-light me-5" (click)="switchPost(post)">SWITCH</button>
+        <p class="card-text text-secodary">({{post.type}})</p>
+        <a class="btn ps-0" [routerLink]="['/author']">{{post.author | uppercase}}</a>
+        <button class="btn btn-dark d-block me-5" (click)="switchPost(post)">SWITCH</button>
       </div>
     </div>
   </div>

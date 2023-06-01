@@ -14,35 +14,40 @@ export class TodosService {
       "body": "Lorem ipsum dolor sit amet, consectetur adip, lorem pili dolor let amet et, consectetur sopa.",
       "title": "POST NUMERO UNO",
       "type": "politic",
-      "active": true
+      "active": true,
+      "author": "Antonio Valeri"
     },
     {
       "id": 2,
       "body": "Lorem ipsum dolor sit amet, consectetur adip, lorem pili dolor let amet et, consectetur sopa.",
       "title": "POST NUMERO DUE",
       "type": "news",
-      "active": true
+      "active": true,
+      "author": "Alessia Calanchi"
     },
     {
       "id": 3,
       "body": "Lorem ipsum dolor sit amet, consectetur adip, lorem pili dolor let amet et, consectetur sopa.",
       "title": "POST NUMERO TRE",
       "type": "politic",
-      "active": true
+      "active": true,
+      "author": "Luigi Ferdinando"
     },
     {
       "id": 4,
       "body": "Lorem ipsum dolor sit amet, consectetur adip, lorem pili dolor let amet et, consectetur sopa.",
       "title": "POST NUMERO QUATTRO",
       "type": "education",
-      "active": false
+      "active": false,
+      "author": "Maria Bianchi"
     },
     {
       "id": 5,
       "body": "Lorem ipsum dolor sit amet, consectetur adip, lorem pili dolor let amet et, consectetur sopa.",
       "title": "POST NUMERO CINQUE",
       "type": "news",
-      "active": false
+      "active": false,
+      "author": "Mario Rossi"
     }
   ]
   getAllPosts():Post[] {
