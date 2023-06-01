@@ -1,1 +1,14 @@
-<p>home works!</p>
+<div class="row">
+  <div class="col-4 p-1" *ngFor="let post of posts">
+    <div
+    [ngClass]="{'bg-warning': post.type =='news', 'bg-secondary': post.type =='education', 'bg-lighmatTabLabel': post.type =='politic'}"
+    class="card text-start">
+      <div class="card-body">
+        <h4 class="card-title">{{post.id}} - {{post.title}}</h4>
+        <p class="card-text">{{post.body}}</p>
+        <p class="card-text text-secodary">{{post.type}}</p>
+        <button class="btn btn-light me-5" (click)="switchPost(post)">SWITCH</button>
+      </div>
+    </div>
+  </div>
+</div>
