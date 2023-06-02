@@ -31,9 +31,16 @@ export class TodoComponent implements OnInit {
     })
   }
   create(){
-    this.TodosSvc.addTodo(this.todo).then(res => this.getTodos());
-    this.innerText = "";
+    if(this.innerText == ""){
+      this.innerText = "INSERISCI LA TODO"
+    }else if(this.innerText == "INSERISCI LA TODO"){
+      this.innerText = "INSERISCI LA TODO"
+    }else{
+      this.TodosSvc.addTodo(this.todo).then(res => this.getTodos());
+      this.innerText = "";
+    }
   }
+
   complete(id?:number){
     this.TodosSvc.toggleCompleted(id).then(response => this.getTodos())
   }

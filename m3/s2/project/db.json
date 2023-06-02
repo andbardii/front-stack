@@ -24,6 +24,26 @@
       "title": "Imparare TailWind",
       "completed": false,
       "id": 7
+    },
+    {
+      "title": "Impare Bootstrap",
+      "completed": false,
+      "id": 8
+    },
+    {
+      "title": "Imparare HTML",
+      "completed": false,
+      "id": 9
+    },
+    {
+      "title": "Imparare CSS",
+      "completed": false,
+      "id": 10
+    },
+    {
+      "title": "Imparare SCSS",
+      "completed": false,
+      "id": 11
     }
   ]
 }

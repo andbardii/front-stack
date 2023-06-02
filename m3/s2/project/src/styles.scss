@@ -13,6 +13,11 @@ body{
   border: 2px solid black;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin: 1vh;
+  &:hover{
+    transform: scale(1.1);
+    border: 2px solid lightcoral;
+    box-shadow: 0 0 10px lightcoral;
+  }
 }
 
 //! DISPLAY

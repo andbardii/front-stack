@@ -1,7 +1,7 @@
 
 <p class="t-center" *ngIf="loading">Loading...</p>
 <p *ngIf="todosArray.length == 0 && !loading">NON CI SONO TODO, DATTI DA FARE!</p>
-
+<h3 class="t-center">HAI COMPLETATO {{todosArray.length}} TODOS!</h3>
 <div class="todoHome container">
   <div class="todo bg-light t-dark ps" *ngFor="let todo of todosArray">
     <h3 class="m0 t-center">{{todo.title}}</h3>
