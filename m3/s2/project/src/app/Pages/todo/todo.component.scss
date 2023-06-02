@@ -1,0 +1,32 @@
+#noTodo{
+  text-align: center;
+}
+#form-container{
+  text-align: center;
+}
+form{
+  input{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    &:focus{
+      box-shadow: 0 0 20px lightcoral;
+    }
+  }
+  button{
+    border: none;
+    border-radius: 50%;
+    margin-left: 1vw;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: large;
+    transition: all 300ms;
+    &:hover{
+      background-color: lightcoral;
+      color: black;
+    }
+    &:focus{
+      transform: rotate(90deg);
+    }
+  }
+}

@@ -3,6 +3,7 @@ html,
 body{
   height: 100%;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 //! DISPLAY
@@ -39,6 +40,9 @@ body{
 }
 .h-100{
   height: 100%;
+}
+.bold{
+  font-weight: bold;
 }
 
 //! FLEXBOX
@@ -79,7 +83,7 @@ body{
 //! COLORS
 
 .bg-dark{
-  background-color: rgb(11, 11, 11);
+  background-color: rgb(32, 32, 32);
 }
 .bg-black{
   background-color: black;
@@ -100,7 +104,7 @@ body{
   color: darkorange;
 }
 .t-dark{
-  color: rgb(11, 11, 11);
+  color: rgb(32, 32, 32);
 }
 .t-black{
   color: black;
@@ -119,4 +123,8 @@ body{
 }
 .t-orange{
   color: darkorange;
+}
+.swaghover:hover{
+  color: lightcoral;
+  border: 1 solid lightcoral;
 }
