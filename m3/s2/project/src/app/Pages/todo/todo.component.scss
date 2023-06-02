@@ -1,10 +1,30 @@
 #noTodo{
   text-align: center;
 }
+.todoHome{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .complete-todo,
+  .uncompleted-todo{
+    padding-right: 20px;
+  }
+  .container{
+    padding-top: 40px;
+  }
+}
+@media screen and (min-width: 450px){
+  .todoHome{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 #form-container{
-  text-align: center;
+  padding-bottom: 10vh;
 }
 form{
+  text-align: center;
+
   input{
     padding-top: 6px;
     padding-bottom: 6px;

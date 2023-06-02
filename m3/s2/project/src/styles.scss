@@ -6,6 +6,15 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
+//TODO
+.todo{
+  height: 100px;
+  width: 200px;
+  border: 2px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 1vh;
+}
+
 //! DISPLAY
 .none{
   display: none;
@@ -33,6 +42,9 @@ body{
 .bottom{
   bottom: 0;
 }
+.t-center{
+  text-align: center;
+}
 
 //! DIMENSIONS
 .w-100{
@@ -46,7 +58,7 @@ body{
 }
 
 //! FLEXBOX
-.flex{
+.container{
   display: flex;
 }
 .justify-center{
@@ -60,6 +72,9 @@ body{
 }
 
 //! SPACING
+.p0{
+  padding: 0;
+}
 .ps{
   padding: 0.5vh;
 }
@@ -70,6 +85,9 @@ body{
   padding: 5vh;
 }
 
+.m0{
+  margin: 0;
+}
 .ms{
   margin: 0.5vh;
 }
@@ -124,7 +142,12 @@ body{
 .t-orange{
   color: darkorange;
 }
+
+//! UI
 .swaghover:hover{
   color: lightcoral;
   border: 1 solid lightcoral;
+}
+.pointer{
+  cursor: pointer;
 }

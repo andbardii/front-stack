@@ -1,16 +1,29 @@
 {
   "todos": [
-    { "id": 1,
+    {
+      "id": 1,
       "title": "Imparare Angular",
-      "completed": false
+      "completed": true
     },
-    { "id": 2,
-      "title":"Imparare Typescript",
-      "completed":false
+    {
+      "title": "Imparare HTML",
+      "completed": true,
+      "id": 2
     },
-    { "id": 2,
-      "title":"Creare il primo sito",
-      "completed":false
+    {
+      "title": "Imparare CSS",
+      "completed": true,
+      "id": 3
+    },
+    {
+      "title": "Imparare Python",
+      "completed": true,
+      "id": 6
+    },
+    {
+      "title": "Imparare TailWind",
+      "completed": false,
+      "id": 7
     }
   ]
 }
