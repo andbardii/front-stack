@@ -8,7 +8,12 @@ form{
   input{
     padding-top: 6px;
     padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid black;
+    outline: none;
     &:focus{
+      border: 2px solid lightcoral;
       box-shadow: 0 0 20px lightcoral;
     }
   }
