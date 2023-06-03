@@ -59,6 +59,14 @@
     background-color: darkblue;
     color: white;
     border-radius: 50px;
+    &:focus{
+      background-color: white;
+      color: darkblue;
+      font-weight: bold;
+    }
+    &:hover{
+      transform: scale(1.2);
+    }
   }
   h3{
     span{
