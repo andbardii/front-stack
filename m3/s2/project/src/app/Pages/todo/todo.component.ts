@@ -42,7 +42,10 @@ export class TodoComponent implements OnInit {
   }
 
   complete(id?:number){
-    this.TodosSvc.toggleCompleted(id).then(response => this.getTodos())
+    this.TodosSvc.toggleFalseCompleted(id).then(response => this.getTodos())
+  }
+  uncomplete(id?:number){
+    this.TodosSvc.toggleTrueCompleted(id).then(response => this.getTodos())
   }
 
 }

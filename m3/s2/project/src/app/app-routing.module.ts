@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CompletedComponent } from './Pages/completed/completed.component';
 import { TodoComponent } from './Pages/todo/todo.component';
 import { HomeComponent } from './Pages/home/home.component';
+import { UncompletedComponent } from './Pages/uncompleted/uncompleted.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'completed',
     component: CompletedComponent,
+  },
+  {
+    path: 'uncompleted',
+    component: UncompletedComponent,
   }
 ];
 

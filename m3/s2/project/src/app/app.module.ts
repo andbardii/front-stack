@@ -8,6 +8,7 @@ import { CompletedComponent } from './Pages/completed/completed.component';
 import { NavbarComponent } from './Elements/navbar/navbar.component';
 import { FooterComponent } from './Elements/footer/footer.component';
 import { HomeComponent } from './Pages/home/home.component';
+import { UncompletedComponent } from './Pages/uncompleted/uncompleted.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HomeComponent } from './Pages/home/home.component';
     CompletedComponent,
     NavbarComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    UncompletedComponent
     ],
   imports: [
     BrowserModule,

@@ -29,13 +29,22 @@ export class TodosService {
     }).then(response => response.json());
   }
 
-  toggleCompleted(id:number = 0) {
+  toggleFalseCompleted(id:number = 0) {
     return fetch(this.url+'/'+id, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({ completed: true })
+    }).then((res) => res.json());
+  }
+  toggleTrueCompleted(id:number = 0) {
+    return fetch(this.url+'/'+id, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ completed: false })
     }).then((res) => res.json());
   }
 }
