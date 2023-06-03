@@ -41,3 +41,29 @@
     flex-direction: row;
   }
 }
+#situazione{
+  border-radius: 15px;
+  width: 100%;
+  #bg-barra{
+    height: 100px;
+    border: 2px solid darkblue;
+    border-radius: 52px;
+    #barra{
+      height: 100px;
+      border-radius: 50px;
+      border: 1px solid darkblue;
+    }
+  }
+  button{
+    border: none;
+    background-color: darkblue;
+    color: white;
+    border-radius: 50px;
+  }
+  h3{
+    span{
+      padding: 5px 15px;
+      border-radius: 100px;
+    }
+  }
+}

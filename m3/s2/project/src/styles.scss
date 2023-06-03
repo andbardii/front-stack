@@ -190,12 +190,22 @@ body{
 .t-center{
   text-align: center;
 }
+.fs-l{
+  font-size: xx-large;
+}
 
 
 //! UI
-.swaghover:hover{
-  color: lightblue;
-  border: 1 solid lightblue;
+.swaghover{
+  &:hover{
+    color: lightblue;
+    border: 1 solid lightblue;
+  }
+  &:active{
+    svg{
+      transform: scale(1.5);
+    }
+  }
 }
 .pointer{
   cursor: pointer;

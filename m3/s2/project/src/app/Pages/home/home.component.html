@@ -12,7 +12,7 @@
 </h3>
 <div id="info" class="container">
   <div class="ms pm container column align-center bg-lblue t-blu">
-    <h3>TEMPO DI CARICAMENTO ASSICURATO</h3>
+    <h3 class="t-center">TEMPO DI CARICAMENTO ASSICURATO</h3>
     <p class="t-center">Se gia hai poco tempo per te stesso, passane ancora un po qui ad aspettare la risposta del nostro server, il tempo medio di ogni risposta è di circa 3 secondi!</p>
     <button [routerLink]="['/todo']">
       TRY
@@ -32,5 +32,25 @@
     <strong>npm i</strong>
     <strong>npm run server</strong>
     <strong>ng s -o</strong>
+  </div>
+</div>
+<h2 class="t-blu t-center">LA TUA SITUAZIONE</h2>
+<div class="container column justify-center align-center">
+<p class="t-center t-blu" *ngIf="loading">Loading...</p>
+<p *ngIf="todosArray.length == 0 && !loading" class="t-center t-blu">OPS... NON HAI INSERITO NESSUNA TODO!</p>
+  <div *ngIf="todosArray.length > 0" class="w-100">
+    <div class="container justify-center">
+      <div id="situazione" class="ms pm container column align-center bg-lblue t-blu">
+        <h3>Hai completato <span class="fs-l t-white bg-blu">{{todosCompletedArray.length}}</span> todos.</h3>
+        <h3>Ti mancano <span class="fs-l t-white bg-blu">{{todosUncompletedArray.length}}</span> todos da completare.</h3>
+        <div id="bg-barra" class="w-100 mm bg-white">
+          <div id="barra" class="w-100 bg-blu" appSitua>
+          </div>
+        </div>
+        <button [routerLink]="['/todo']" class="pm mm">
+          GESTISCI LE TUE TODO
+        </button>
+      </div>
+    </div>
   </div>
 </div>

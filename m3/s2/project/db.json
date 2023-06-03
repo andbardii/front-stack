@@ -25,14 +25,8 @@
       "id": 4
     },
     {
-      "title": "Imparare PHP",
-      "completed": false,
-      "date": "2023-06-03T10:59:53.850Z",
-      "id": 5
-    },
-    {
       "title": "Imparare Python",
-      "completed": false,
+      "completed": true,
       "date": "2023-06-03T10:59:53.850Z",
       "id": 6
     },
@@ -50,9 +44,15 @@
     },
     {
       "title": "Imparare Tailwindcss",
-      "completed": false,
+      "completed": true,
       "date": "2023-06-03T11:48:14.459Z",
       "id": 9
+    },
+    {
+      "title": "Imparare PHP",
+      "completed": false,
+      "date": "2023-06-03T14:19:05.548Z",
+      "id": 10
     }
   ]
 }

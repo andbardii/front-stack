@@ -9,6 +9,7 @@ import { NavbarComponent } from './Elements/navbar/navbar.component';
 import { FooterComponent } from './Elements/footer/footer.component';
 import { HomeComponent } from './Pages/home/home.component';
 import { UncompletedComponent } from './Pages/uncompleted/uncompleted.component';
+import { SituaDirective } from './Directives/situa.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { UncompletedComponent } from './Pages/uncompleted/uncompleted.component'
     NavbarComponent,
     FooterComponent,
     HomeComponent,
-    UncompletedComponent
+    UncompletedComponent,
+    SituaDirective
     ],
   imports: [
     BrowserModule,
