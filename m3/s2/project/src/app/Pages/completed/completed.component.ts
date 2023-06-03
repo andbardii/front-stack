@@ -10,7 +10,7 @@ import { TodosService } from 'src/app/Services/todos.service';
 export class CompletedComponent implements OnInit {
 
   todosArray:Ctodo[] = [];
-  todo:Ctodo = new Ctodo("",false);
+  todo:Ctodo = new Ctodo("",false, new Date());
   loading:boolean = true
   constructor(private TodosSvc:TodosService){ }
   ngOnInit(): void {

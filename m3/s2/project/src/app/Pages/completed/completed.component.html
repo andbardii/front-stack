@@ -1,12 +1,13 @@
 
 <p class="t-center t-blu" *ngIf="loading">Loading...</p>
 
-    <h3 *ngIf="todosArray.length >= 0 && !loading" class="t-center t-blu">HAI COMPLETATO {{todosArray.length}} TODOS!</h3>
-    <p *ngIf="todosArray.length == 0 && !loading" class="t-center t-blu">NON CI SONO TODO, DATTI DA FARE!</p>
+    <h3 *ngIf="todosArray.length > 0 && !loading" class="t-center t-blu">HAI COMPLETATO {{todosArray.length}} TODOS!</h3>
+    <p *ngIf="todosArray.length == 0 && !loading" class="t-center t-blu">NON HAI COMPLETATO NESSUNA TODO, DATTI DA FARE!</p>
 
 <div class="todoHome container">
   <div class="todo ps" *ngFor="let todo of todosArray">
     <h3 class="m0 t-center">{{todo.title}}</h3>
+    <p class="t-blu t-center">{{todo.date | date:'medium'}}</p>
     <div class="container justify-center">
       <div class="pointer complete-todo" *ngIf="todo.completed == true">
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-check-circle-fill" viewBox="0 0 16 16">

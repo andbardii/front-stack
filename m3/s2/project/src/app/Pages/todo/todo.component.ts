@@ -10,7 +10,7 @@ import { Ctodo } from 'src/app/Models/ctodo';
 export class TodoComponent implements OnInit {
 
   todosArray:Ctodo[] = [];
-  todo:Ctodo = new Ctodo("",false);
+  todo:Ctodo = new Ctodo("",false, new Date());
   loading:boolean = true
   innerText:string = ""
 
