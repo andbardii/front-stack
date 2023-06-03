@@ -1,15 +1,17 @@
-<div id="form-container">
-  <form action="add-todo">
-    <input [(ngModel)]="todo.title" [(ngModel)]="innerText" name="title" type="text" placeholder="New Todo Here!" required>
-    <button (click)="create()" class="bg-dark t-light">+</button>
-  </form>
+<div id="bg" class="container justify-center w-100 ">
+  <div id="form-container" class="fixed top2 container justify-center w-100 zii">
+    <form action="add-todo" class="container justify-center align-center">
+      <input [(ngModel)]="todo.title" [(ngModel)]="innerText" name="title" type="text" placeholder="New Todo Here!" required>
+      <button (click)="create()" class="bg-blu t-light"><div class="f-large">+</div></button>
+    </form>
+  </div>
 </div>
 
-<p class="t-center" *ngIf="loading">Loading...</p>
-<p *ngIf="todosArray.length == 0 && !loading">NON CI SONO TODO, DATTI DA FARE!</p>
+<p class="t-center t-blu" *ngIf="loading">Loading...</p>
+<p *ngIf="todosArray.length == 0 && !loading" class="t-blu">NON CI SONO TODO, DATTI DA FARE!</p>
 
 <div class="todoHome container">
-  <div class="todo bg-light t-dark ps" *ngFor="let todo of todosArray">
+  <div class="todo ps" *ngFor="let todo of todosArray">
     <h3 class="m0 t-center">{{todo.title}}</h3>
     <div class="container justify-center">
       <div class="pointer complete-todo" *ngIf="todo.completed == true">

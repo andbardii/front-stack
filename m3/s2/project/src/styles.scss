@@ -10,13 +10,16 @@ body{
 .todo{
   height: 100px;
   width: 200px;
-  border: 2px solid black;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 2px solid lightblue;
+  box-shadow: 0 0 5px darkblue;
   margin: 1vh;
+  background-color: lightblue;
+  color: darkblue;
   &:hover{
     transform: scale(1.1);
-    border: 2px solid lightcoral;
-    box-shadow: 0 0 10px lightcoral;
+    border: 2px solid darkblue;
+    box-shadow: 0 0 10px darkblue;
+    z-index: 10;
   }
 }
 
@@ -44,11 +47,23 @@ body{
 .top{
   top: 0;
 }
+.top2{
+  top: 10vh;
+}
 .bottom{
   bottom: 0;
 }
-.t-center{
-  text-align: center;
+.left{
+  left:auto;
+}
+.rigt{
+  right:auto;
+}
+.zi{
+  z-index: 1000;
+}
+.zii{
+  z-index: 1500;
 }
 
 //! DIMENSIONS
@@ -57,9 +72,6 @@ body{
 }
 .h-100{
   height: 100%;
-}
-.bold{
-  font-weight: bold;
 }
 
 //! FLEXBOX
@@ -103,8 +115,7 @@ body{
   margin: 5vh;
 }
 
-//! COLORS
-
+// BACKGROUND COLORS
 .bg-dark{
   background-color: rgb(32, 32, 32);
 }
@@ -123,6 +134,14 @@ body{
 .bg-red{
   background-color: darkred;
 }
+.bg-lblue{
+  background-color: lightblue;
+}
+.bg-blu{
+  background-color: darkblue
+}
+
+// TEXT COLORS
 .t-orange{
   color: darkorange;
 }
@@ -147,11 +166,26 @@ body{
 .t-orange{
   color: darkorange;
 }
+.t-lblue{
+  color: lightblue;
+}
+.t-blu{
+  color: darkblue
+}
+
+//! TEXT
+.bold{
+  font-weight: bold;
+}
+.t-center{
+  text-align: center;
+}
+
 
 //! UI
 .swaghover:hover{
-  color: lightcoral;
-  border: 1 solid lightcoral;
+  color: lightblue;
+  border: 1 solid lightblue;
 }
 .pointer{
   cursor: pointer;

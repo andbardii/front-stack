@@ -22,28 +22,43 @@
     },
     {
       "title": "Imparare TailWind",
-      "completed": false,
+      "completed": true,
       "id": 7
     },
     {
       "title": "Impare Bootstrap",
-      "completed": false,
+      "completed": true,
       "id": 8
     },
     {
       "title": "Imparare HTML",
-      "completed": false,
+      "completed": true,
       "id": 9
     },
     {
-      "title": "Imparare CSS",
-      "completed": false,
-      "id": 10
+      "title": "Imparare SCSS",
+      "completed": true,
+      "id": 11
     },
     {
-      "title": "Imparare SCSS",
+      "title": "Imparare Json",
+      "completed": true,
+      "id": 12
+    },
+    {
+      "title": "Imparare PHP",
+      "completed": true,
+      "id": 13
+    },
+    {
+      "title": "Imparare JavaScript",
+      "completed": true,
+      "id": 14
+    },
+    {
+      "title": "Imparare TypeScript",
       "completed": false,
-      "id": 11
+      "id": 15
     }
   ]
 }

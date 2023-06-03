@@ -1,0 +1,41 @@
+#imgc{
+  padding-top:0;
+}
+#info{
+  flex-direction: column;
+  div.ms{
+    border: 2px solid lightblue;
+    box-shadow: 0 0 5px darkblue;
+    margin: 1vh;
+    position: relative;
+    padding: 20px;
+    padding-bottom: 50px;
+    border: 1px solid transparent;
+    &:hover{
+      border: 1px solid darkblue;
+    }
+
+    button{
+      background-color: white;
+      color: darkblue;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 1.5rem;
+      position:absolute;
+      bottom: 20px;
+
+      &:focus{
+        box-shadow: 0 0 10px darkblue;
+        background-color: darkblue;
+        color: white;
+      }
+    }
+  }
+}
+@media screen and (min-width: 900px){
+  #info{
+    flex-direction: row;
+  }
+}
