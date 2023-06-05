@@ -7,7 +7,7 @@ import { Cphoto } from '../Model/cphoto';
 })
 export class SphotoService {
 
-  apiUrl:string = "http://localhost:3000/photos"
+  apiUrl:string = 'http://localhost:3000/photos'
 
   constructor(private http:HttpClient) { }
 
@@ -15,17 +15,12 @@ export class SphotoService {
     return this.http.get<Cphoto[]>(this.apiUrl);
   }
 
-  postPhoto (photo:Cphoto){
-    return this.http.post<Cphoto>(this.apiUrl,photo);
-    //il secondo argomento è l'oggetto che si manda al server per la creazione
-  }
-
-  putPhoto (photo:Cphoto){
-    return this.http.put<Cphoto>(this.apiUrl + '/' + photo.id, photo);
-    //il secondo argomento è l'oggetto che si manda al server per l'aggironamento
-  }
-
   deletePhoto (id:number){
     return this.http.delete(this.apiUrl + '/' + id);
+  }
+
+  likeThis (photo:Cphoto){
+    photo.liked = !photo.liked
+    return this.http.put<Cphoto>(this.apiUrl + '/' + photo.id, photo);
   }
 }

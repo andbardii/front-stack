@@ -7,6 +7,7 @@ import { HomeComponent } from './Pages/home/home.component';
 import { NavbarComponent } from './Elements/navbar/navbar.component';
 import { FooterComponent } from './Elements/footer/footer.component';
 import { LikedComponent } from './Pages/liked/liked.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LikedComponent } from './Pages/liked/liked.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
