@@ -1,0 +1,72 @@
+<div class="container pt-5">
+  <div class="row pb-5">
+    <h2 class="text-center mb-2">CREA IL TUO SUPEREROE!</h2>
+    <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+      <div class="form-group"></div>
+      <input type="text"
+             name="name"
+             placeholder="nome"
+             class="form-control"
+             [(ngModel)]="hero.name">
+      <input type="text"
+             name="alterEgo"
+             placeholder="alterEgo"
+             class="form-control"
+             [(ngModel)]="hero.alterEgo">
+      <input type="text"
+             name="power"
+             placeholder="power"
+             class="form-control"
+             [(ngModel)]="hero.power">
+      <input type="text"
+             name="enemy"
+             placeholder="enemy"
+             class="form-control"
+             [(ngModel)]="hero.enemy">
+      <input type="text"
+             name="planet"
+             placeholder="planet"
+             class="form-control"
+             [(ngModel)]="hero.planet">
+      <input type="text"
+             name="weakness"
+             placeholder="weakness"
+             class="form-control"
+             [(ngModel)]="hero.weakness">
+      <button class="btn btn-outline-dark mt-2" type="submit" [disabled]="form.invalid">CREA</button>
+    </form>
+  </div>
+  <div class="row pb-5">
+    <div class="col-12 p-3">
+      <div class="border border-dark rounded-3 p-3" *ngIf="hero.name !== '' ">
+        <h3>{{hero.name}}</h3>
+        <small *ngIf="hero.alterEgo !== '' ">{{hero.alterEgo}}</small>
+        <p *ngIf="hero.planet !== '' ">Pianeta di provenienza: {{hero.planet}}</p>
+          <strong class="d-block" *ngIf="hero.power !== '' ">POTERE</strong>
+          <p *ngIf="hero.power !== '' ">{{hero.power}}</p>
+          <strong class="d-block" *ngIf="hero.enemy !== '' ">NEMICO</strong>
+          <p *ngIf="hero.enemy !== '' ">{{hero.enemy}}</p>
+          <strong class="d-block" *ngIf="hero.weakness !== '' ">DEBOLEZZA</strong>
+          <p *ngIf="hero.weakness !== '' ">{{hero.weakness}}</p>
+      </div>
+    </div>
+
+    </div>
+  <div class="row pb-5">
+    <div class="col-12 p-3" *ngFor="let hero of heroArr">
+      <div class="border border-dark rounded-3 p-3">
+        <h3>{{hero.name}}</h3>
+        <small>{{hero.alterEgo}}</small>
+        <p>Pianeta di provenienza: {{hero.planet}}</p>
+          <strong class="d-block">POTERE</strong>
+          <p>{{hero.power}}</p>
+          <strong class="d-block">NEMICO</strong>
+          <p>{{hero.enemy}}</p>
+          <strong class="d-block">DEBOLEZZA</strong>
+          <p>{{hero.weakness}}</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>

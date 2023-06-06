@@ -1,0 +1,22 @@
+{
+  "superhero": [
+    {
+      "id": 1,
+      "name": "Batman",
+      "alterEgo": "Bruce Wayne",
+      "power": "Money",
+      "enemy": "Joker",
+      "planet": "Earth",
+      "weakness": "Family"
+    },
+    {
+      "name": "SwissSicily",
+      "alterEgo": "Vincenzo",
+      "power": "Marketing",
+      "enemy": "Chiara",
+      "planet": "Earth",
+      "weakness": "Angular",
+      "id": 2
+    }
+  ]
+}
