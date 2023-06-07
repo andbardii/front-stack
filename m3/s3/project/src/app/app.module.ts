@@ -12,13 +12,13 @@ import { HomeComponent } from './Pages/home/home.component';
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    HomeComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
