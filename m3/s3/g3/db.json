@@ -1,0 +1,58 @@
+{
+  "todos": [
+    {
+      "title": "Imparare HTML",
+      "completed": true,
+      "date": "2023-06-03T10:52:44.303Z",
+      "id": 1
+    },
+    {
+      "title": "Imparare CSS",
+      "completed": true,
+      "date": "2023-06-03T10:52:44.303Z",
+      "id": 2
+    },
+    {
+      "title": "Imparare JavaScript",
+      "completed": true,
+      "date": "2023-06-03T10:58:21.984Z",
+      "id": 3
+    },
+    {
+      "title": "Imparare Angular",
+      "completed": true,
+      "date": "2023-06-03T10:59:53.850Z",
+      "id": 4
+    },
+    {
+      "title": "Imparare Python",
+      "completed": false,
+      "date": "2023-06-03T10:59:53.850Z",
+      "id": 6
+    },
+    {
+      "title": "Imparare SCSS",
+      "completed": true,
+      "date": "2023-06-03T10:59:53.850Z",
+      "id": 7
+    },
+    {
+      "title": "Imparare Bootstrap",
+      "completed": true,
+      "date": "2023-06-03T10:59:53.850Z",
+      "id": 8
+    },
+    {
+      "title": "Imparare Tailwindcss",
+      "completed": false,
+      "date": "2023-06-03T11:48:14.459Z",
+      "id": 9
+    },
+    {
+      "title": "Imparare PHP",
+      "completed": false,
+      "date": "2023-06-03T14:19:05.548Z",
+      "id": 10
+    }
+  ]
+}
