@@ -1,11 +1,25 @@
 {
-  "users":[],
-  "todos":
-  [
+  "users": [
     {
-      "id":1,
-      "title":"Imparare Angular",
-      "completed":true
+      "email": "mariorossi@gmail.com",
+      "password": "$2a$10$aPJtdbI20dNgGUqs9i5AUucYO6JlAp9bOUV7L62l6yreY4FNcyrB2",
+      "name": "Mario",
+      "surname": "Rossi",
+      "id": 1
+    },
+    {
+      "email": "mariabianchi@gmail.com",
+      "password": "$2a$10$9unGq0T67t.v.bX4.nwCkucacRqmK5SbRm7JBw3YszoxeglovbpxW",
+      "name": "maria",
+      "surname": "bianchi",
+      "id": 2
+    }
+  ],
+  "todos": [
+    {
+      "id": 1,
+      "title": "Imparare Angular",
+      "completed": true
     }
   ]
 }

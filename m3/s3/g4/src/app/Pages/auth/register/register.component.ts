@@ -19,7 +19,10 @@ export class RegisterComponent {
   constructor(private authSvc: AuthService){}
 
   register(){
-
+    this.authSvc.userRegister(this.data)
+    .subscribe(data => {
+      console.log("USER REGISTRATO: " + data.user.name)
+    })
   }
 
 }
