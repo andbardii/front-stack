@@ -1,0 +1,42 @@
+<div class="text-center">
+  <form class="form-signin px-5">
+    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+
+    <label for="email" class="sr-only">Email address</label>
+    <input type="email"
+           class="form-control mb-3"
+           placeholder="Email address"
+           required
+           name="email"
+           [(ngModel)]="data.email">
+
+    <label for="password" class="sr-only">Password</label>
+    <input type="password"
+           class="form-control mb-3"
+           placeholder="Password"
+           required
+           name="password"
+           [(ngModel)]="data.password">
+
+    <label for="name" class="sr-only">Name</label>
+    <input type="text"
+           class="form-control mb-3"
+           placeholder="Name"
+           required
+           name="name"
+           [(ngModel)]="data.name">
+
+    <label for="surname" class="sr-only">Surname</label>
+    <input type="text"
+           class="form-control mb-3"
+           placeholder="Surname"
+           required
+           name="surname"
+           [(ngModel)]="data.surname">
+
+    <button class="btn btn-lg btn-primary btn-block" (click)="register()">Sign in</button>
+
+    <p class="mt-5 mb-3 text-muted">© 2023</p>
+  </form>
+</div>
+
