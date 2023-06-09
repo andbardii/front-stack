@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AuthService } from './auth.service';
 
 
@@ -7,13 +7,19 @@ import { AuthService } from './auth.service';
   templateUrl: './auth.component.html',
   styleUrls: ['./auth.component.scss']
 })
-export class AuthComponent {
+export class AuthComponent implements OnInit {
 
-  constructor(private authSvc: AuthService){}
+  userIsLogged:boolean = false;
 
-  logout(){
-    this.authSvc.userLogout()
+  ngOnInit() {
+    this.checkUser()
   }
-
+  checkUser() {
+    if(localStorage.getItem('user') == null){
+      return
+    }else{
+      this.userIsLogged = true;
+    }
+  }
 
 }

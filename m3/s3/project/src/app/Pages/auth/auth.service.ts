@@ -6,6 +6,7 @@ import { BehaviorSubject, map, tap } from 'rxjs';
 import { AccessData } from 'src/app/Model/accessdata';
 import { LoginData } from 'src/app/Model/logindata';
 import { RegisterData } from 'src/app/Model/registerdata';
+import { User } from 'src/app/Model/user';
 import { environment } from 'src/environments/environment.development';
 
 @Injectable({
@@ -40,6 +41,8 @@ export class AuthService {
 
         const expDate = this.jwtHelper
         .getTokenExpirationDate(data.accessToken) as Date;
+
+        this.autoLogout(expDate)
       }),
       )
     }

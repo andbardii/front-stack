@@ -18,58 +18,51 @@
   "posts": [
     {
       "userId": 1,
-      "id": 4,
-      "title": "culpa odio esse rerum omnis laboriosam voluptate repudiandae",
-      "url": "https://via.placeholder.com/600/d32776",
-      "thumbnailUrl": "https://via.placeholder.com/150/d32776",
-      "liked": false
+      "id": 11,
+      "title": "Rick",
+      "url": "https://upload.wikimedia.org/wikipedia/it/thumb/f/f0/Screenshot_Videoclip_Never_Gonna_Give_You_Up.png/520px-Screenshot_Videoclip_Never_Gonna_Give_You_Up.png",
+      "liked": true
     },
     {
-      "albumId": 1,
-      "id": 5,
-      "title": "natus nisi omnis corporis facere molestiae rerum in",
-      "url": "https://via.placeholder.com/600/f66b97",
-      "thumbnailUrl": "https://via.placeholder.com/150/f66b97",
+      "userId": 1,
+      "id": 12,
+      "title": "Baby CZ",
+      "url": "https://www.coindesk.com/resizer/IKD0a6yC_6jI8XB2jQxJe1TkJGc=/567x425/filters:quality(80):format(jpg)/cloudfront-us-east-1.images.arcpublishing.com/coindesk/DBNDM5UWFNDZRAWJ4W2FCTBVDQ.jpg",
       "liked": false
     },
     {
       "userId": 1,
-      "id": 6,
-      "title": "accusamus ea aliquid et amet sequi nemo",
-      "url": "https://via.placeholder.com/600/56a8c2",
-      "thumbnailUrl": "https://via.placeholder.com/150/56a8c2",
+      "id": 13,
+      "title": "$PEPE to the MOON",
+      "url": "https://i.redd.it/fzyp5hwjsqxa1.jpg",
       "liked": false
     },
     {
       "userId": 1,
-      "id": 7,
-      "title": "officia delectus consequatur vero aut veniam explicabo molestias",
-      "url": "https://via.placeholder.com/600/b0f7cc",
-      "thumbnailUrl": "https://via.placeholder.com/150/b0f7cc",
+      "id": 14,
+      "title": "Ibiza",
+      "url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/10/2e/a4/ibiza.jpg?w=700&h=500&s=1",
       "liked": false
     },
     {
       "userId": 1,
-      "id": 8,
-      "title": "aut porro officiis laborum odit ea laudantium corporis",
-      "url": "https://via.placeholder.com/600/54176f",
-      "thumbnailUrl": "https://via.placeholder.com/150/54176f",
-      "liked": false
+      "id": 15,
+      "title": "Programming",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/C_Hello_World_Program.png/357px-C_Hello_World_Program.png",
+      "liked": true
     },
     {
       "userId": 1,
-      "id": 9,
-      "title": "qui eius qui autem sed",
-      "url": "https://via.placeholder.com/600/51aa97",
-      "thumbnailUrl": "https://via.placeholder.com/150/51aa97",
-      "liked": false
+      "id": 16,
+      "title": "Fare a pizza",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk6MIe2sQS5aFsHKnXEYU4xKfniJ3HOEl4Sg&usqp=CAU",
+      "liked": true
     },
     {
-      "userId": 1,
-      "id": 10,
-      "title": "beatae et provident et ut vel",
-      "url": "https://via.placeholder.com/600/810b14",
-      "thumbnailUrl": "https://via.placeholder.com/150/810b14",
+      "userId": 2,
+      "id": 17,
+      "title": "Ciao sono Maria",
+      "url": "https://www.today.it/~media/horizontal-hi/65005999434786/le-iene-gisella-cardia.jpg",
       "liked": false
     }
   ]
