@@ -22,7 +22,11 @@ export class AuthService {
 
   constructor(
     private http: HttpClient,
-    private router: Router) { }
+    private router: Router) {
+
+      this.restoreUser();
+
+    }
 
     userRegister(data:RegisterData){
       return this.http.post<AccessData>(this.apiUrl + '/register', data);
@@ -42,6 +46,7 @@ export class AuthService {
 
     userLogout(){
       this.authSubject.next(null);
+      console.log("Log Out di: " + (localStorage.getItem('user')))
       localStorage.removeItem('user');
       this.router.navigate(['/login']);
       if(this.authLogoutTimer){

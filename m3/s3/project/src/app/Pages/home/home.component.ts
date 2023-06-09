@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { PostsService } from './posts.service';
+import { Posts } from 'src/app/Model/posts';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +8,36 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+  postArr:Posts[] = [];
+  likedArr:Posts[] = [];
 
+  constructor(private postsSvc:PostsService){}
+
+  ngOnInit() {
+    this.getArr();
+    this.getLiked()
+  }
+  getArr(){
+    this.postsSvc.getPost().subscribe(result => {
+      this.postArr = result;
+    })
+  }
+  getLiked(){
+    this.postsSvc.getPost().subscribe(result => {
+      this.likedArr = result.filter(post => post.liked == true);
+    })
+  }
+
+  delete(id?:number){
+    this.postsSvc.deletePost(id!).subscribe(result => {
+      this.getArr()
+    })
+  }
+
+  like(post:Posts) {
+    this.postsSvc.likeThis(post).subscribe(result => {
+      this.getArr()
+      this.getLiked()
+    })
+  }
 }
