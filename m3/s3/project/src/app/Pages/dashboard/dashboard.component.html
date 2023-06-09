@@ -1,1 +1,11 @@
-<p>dashboard works!</p>
+<div class="container-fluid">
+  <div class="row pt-5">
+    <div class="col-12 p-3">
+      <div class="border border-4 border-primary rounded-3 px-4 py-3">
+        <div class="h1">Benvenuto <span class="text-primary">{{user.name}} {{user.surname}}</span></div>
+        <p class="d-inline"><strong>e-mail: </strong>{{user.email}}</p><button class="btn btn-primary ms-3">MODIFICA</button>
+        <button class="btn btn-danger d-block mt-5" (click)="logout()">LOG OUT</button>
+      </div>
+    </div>
+  </div>
+</div>

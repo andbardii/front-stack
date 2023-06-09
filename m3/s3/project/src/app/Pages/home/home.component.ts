@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { PostsService } from './posts.service';
 import { Posts } from 'src/app/Model/posts';
+import { User } from 'src/app/Model/user';
 
 @Component({
   selector: 'app-home',
@@ -40,4 +41,5 @@ export class HomeComponent {
       this.getLiked()
     })
   }
+
 }
