@@ -1,6 +1,14 @@
 {
-  "users":[],
-  "posts":[
+  "users": [
+    {
+      "email": "mariorossi@gmail.com",
+      "password": "$2a$10$kU3yPsNdjO/z2V4wN9mSO.GYNy7ix30w9XCcOCrYX6.pL/x37DSLu",
+      "name": "Mario",
+      "surname": "Rossi",
+      "id": 1
+    }
+  ],
+  "posts": [
     {
       "userId": 1,
       "id": 1,
