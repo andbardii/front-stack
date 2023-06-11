@@ -1,0 +1,38 @@
+<div class="container-fluid mt-5">
+<div class="row">
+  <div class="col-12 text-center">
+    <form>
+      <input type="text" class="form-control my-2" name="title" required placeholder="Inserisci il nuovo Titolo" [(ngModel)]="post.title">
+
+      <input type="text" class="form-control my-2" name="url" required placeholder="Inserisci il nuovo Url" [(ngModel)]="post.url">
+
+      <button class="btn btn-primary" (click)="editPost()">EDIT POST</button>
+    </form>
+  </div>
+  <div class="col-12">
+    <div class="row justify-content-center mt-5">
+      <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-2">
+        <div class="card shadow" *ngIf="post.url != ''">
+          <img class="card-img-top" src="{{post.url}}" alt="Title">
+          <div class="card-body">
+            <h4 class="card-title">{{post.title}}</h4>
+            <p class="card-text">USER N° <strong>{{post.userId}}</strong></p>
+            <p class="card-text">POST N° <strong>{{post.id}}</strong></p>
+            <div class="d-inline p-2 m-1 text-danger">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
+              </svg>
+            </div>
+            <button class="btn btn-danger m-1">
+              DELETE
+            </button>
+            <button class="btn btn-primary m-1">
+              EDIT
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>

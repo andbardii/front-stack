@@ -12,7 +12,6 @@ export class LoginComponent {
   constructor(private authSvc: AuthService,
               private router: Router){}
 
-
   data:LoginData = {
     email: '',
     password: ''

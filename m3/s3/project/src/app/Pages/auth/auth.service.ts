@@ -2,11 +2,10 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { JwtHelperService } from '@auth0/angular-jwt';
-import { BehaviorSubject, map, tap } from 'rxjs';
+import { BehaviorSubject, catchError, map, tap, throwError } from 'rxjs';
 import { AccessData } from 'src/app/Model/accessdata';
 import { LoginData } from 'src/app/Model/logindata';
 import { RegisterData } from 'src/app/Model/registerdata';
-import { User } from 'src/app/Model/user';
 import { environment } from 'src/environments/environment.development';
 
 @Injectable({
@@ -21,16 +20,11 @@ export class AuthService {
   isLoggedIn$ = this.user$.pipe(map(dato => Boolean(dato)));
   authLogoutTimer:any;
 
-  constructor(
-    private http: HttpClient,
-    private router: Router) {
-
-      this.restoreUser();
-
-    }
+  constructor(private http: HttpClient, private router: Router) { this.restoreUser() }
 
     userRegister(data:RegisterData){
-      return this.http.post<AccessData>(this.apiUrl + '/register', data);
+      return this.http.post<AccessData>(this.apiUrl + '/register', data)
+      .pipe(catchError(this.toggleError))
     }
 
     userLogin(data:LoginData){
@@ -44,7 +38,27 @@ export class AuthService {
 
         this.autoLogout(expDate)
       }),
+        catchError(this.toggleError)
       )
+    }
+    toggleError(error: any) {
+      switch (error.error) {
+        case "Email and Password are required":
+            return throwError('CAMPI OBBLIGATORI MANCANTI')
+            break
+        case "Email already exists":
+            return throwError('EMAIL GIA UTILIZZATA')
+            break
+        case 'Email format is invalid':
+            return throwError('EMAIL SCRITTA MALE')
+            break
+        case 'Cannot find user':
+            return throwError('UTENTE INESISTENTE')
+            break
+        default:
+            return throwError('ERORE NELLA COMPILAZIONE DEL FORM')
+            break
+    }
     }
 
     userLogout(){

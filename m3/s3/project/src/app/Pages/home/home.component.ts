@@ -33,6 +33,7 @@ export class HomeComponent {
               private authSvc:AuthService){}
 
   ngOnInit() {
+    this.getUser()
     this.getArr();
     this.getLiked()
   }
@@ -73,5 +74,18 @@ export class HomeComponent {
     })
   }
 
+  getUser(){
+    const userDataLocal = localStorage.getItem('user')
+    if (userDataLocal !== null) {
+     const userData = JSON.parse(userDataLocal);
+
+     this.user.id = userData.user.id
+     this.user.email = userData.user.email
+     this.user.name = userData.user.name
+     this.user.surname = userData.user.surname
+
+
+    }else {console.log('NON DOVRESTI ESSERE QUI')}
+   }
 
 }

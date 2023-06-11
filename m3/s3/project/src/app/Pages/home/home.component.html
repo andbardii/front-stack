@@ -2,6 +2,7 @@
   <div class="row">
     <div class="col-12" *ngIf="createZone == true">
       <div class="form-signin w-100 m-auto py-5 text-center">
+        <div class="rounded-3 border border-3 border-primary p-3">
         <form>
           <h1 class="h3 mb-3 fw-normal">Crea un Nuovo Post</h1>
 
@@ -11,13 +12,17 @@
 
           <button class="w-100 btn btn-lg btn-primary" (click)="create()">CREA POST</button>
         </form>
+        </div>
+        <div class="text-center my-2 mt-5">
+          <button class="btn btn-danger" (click)="createZone = !createZone">CHIUDI</button>
+        </div>
       </div>
     </div>
 
     <div class="col-12 text-center p-2">
-      <div class="rounded-3 border border-1 border-primary">
-        <button class="btn btn-outline-primary fw-bold m-3" (click)="createZone = !createZone">CREA UN NUOVO POST</button>
-        <button class="btn btn-outline-primary fw-bold m-3" [routerLink]="['/home','liked']">POST CHE TI PIACCIONO</button>
+      <div class="rounded-3 border border-3 border-primary">
+        <button class="btn btn-primary fw-bold m-3" (click)="createZone = !createZone">CREA UN NUOVO POST</button>
+        <button class="btn btn-primary fw-bold m-3" [routerLink]="['/home','liked']">POST CHE TI PIACCIONO</button>
       </div>
     </div>
 
@@ -40,6 +45,9 @@
           </div>
           <button class="btn btn-danger m-1" (click)="delete(post.id)">
             DELETE
+          </button>
+          <button class="btn btn-primary m-1" [routerLink]="['/home','detail',post.id]">
+            EDIT
           </button>
         </div>
       </div>

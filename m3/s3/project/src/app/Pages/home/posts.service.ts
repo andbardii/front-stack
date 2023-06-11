@@ -24,9 +24,14 @@ export class PostsService {
   createPost (post:Posts){
     return this.http.post<Posts[]>(this.apiUrl, post)
   }
-
-   likeThis (post:Posts){
+  editPost(post:Posts){
+    return this.http.put<Posts>(this.apiUrl + '/' + post.id, post)
+  }
+  likeThis (post:Posts){
     post.liked = !post.liked
     return this.http.put<Posts>(this.apiUrl + '/' + post.id, post);
+  }
+  getPostById(id:number){
+    return this.http.get<Posts>(this.apiUrl + '/' + id)
   }
 }

@@ -20,6 +20,9 @@
           <button class="btn btn-danger m-1" (click)="delete(post.id)">
             DELETE
           </button>
+          <button class="btn btn-primary m-1" [routerLink]="['/home','detail',post.id]">
+            EDIT
+          </button>
         </div>
       </div>
     </div>

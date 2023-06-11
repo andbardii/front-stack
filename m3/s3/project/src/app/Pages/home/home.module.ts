@@ -5,12 +5,14 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { LikedComponent } from './liked/liked.component';
 import { FormsModule } from '@angular/forms';
+import { DetailComponent } from './detail/detail.component';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
-    LikedComponent
+    LikedComponent,
+    DetailComponent
   ],
   imports: [
     CommonModule,
