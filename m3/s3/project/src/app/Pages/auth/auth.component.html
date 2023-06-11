@@ -1,5 +1,5 @@
 <div class="container-fluid pt-5">
-  <div class="row" *ngIf="userIsLogged == false">
+  <div class="row">
     <div class="col-12 text-center p-5">
       <div class="card p-2 shadow">
         <p class="card-text h2 mt-4">Effettua il Log In</p>
@@ -12,8 +12,5 @@
         <button class="btn btn-primary btn-log mt-4" [routerLink]="['/auth','register']">REGISTER</button>
       </div>
     </div>
-  </div>
-  <div class="row mt-5" *ngIf="userIsLogged == true">
-    <div class="col-12 text-center h1 mt-5">SEI AUTORIZZATO A FARE TUTTO, DIVERTITI!</div>
   </div>
 </div>

@@ -7,19 +7,6 @@ import { AuthService } from './auth.service';
   templateUrl: './auth.component.html',
   styleUrls: ['./auth.component.scss']
 })
-export class AuthComponent implements OnInit {
-
-  userIsLogged:boolean = false;
-
-  ngOnInit() {
-    this.checkUser()
-  }
-  checkUser() {
-    if(localStorage.getItem('user') == null){
-      return
-    }else{
-      this.userIsLogged = true;
-    }
-  }
+export class AuthComponent {
 
 }
