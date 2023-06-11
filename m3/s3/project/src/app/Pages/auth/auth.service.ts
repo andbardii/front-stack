@@ -63,7 +63,6 @@ export class AuthService {
 
     userLogout(){
       this.authSubject.next(null);
-      console.log("Log Out di: " + (localStorage.getItem('user')))
       localStorage.removeItem('user');
       this.router.navigate(['/auth','login']);
 
@@ -87,7 +86,7 @@ export class AuthService {
       const user:AccessData = JSON.parse(userJson)
 
       if(this.jwtHelper.isTokenExpired(user.accessToken)){
-        return;
+        return this.userLogout()
       }
 
       this.authSubject.next(user);
