@@ -24,7 +24,7 @@ export class LikedComponent {
 
   delete(id?:number){
     this.postSvc.deletePost(id!).subscribe(result => {
-      this.getLiked()
+      this.likedArr.splice((this.likedArr.findIndex(post => post.id == id)),1)
     })
   }
 

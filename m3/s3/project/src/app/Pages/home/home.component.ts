@@ -50,7 +50,7 @@ export class HomeComponent {
 
   delete(id?:number){
     this.postsSvc.deletePost(id!).subscribe(result => {
-      this.getArr()
+      this.postArr.splice((this.postArr.findIndex(post => post.id == id)),1)
     })
   }
 
@@ -63,6 +63,8 @@ export class HomeComponent {
   create(){
     this.post.userId = this.user.id
     this.postsSvc.createPost(this.post).subscribe(result => {
+      // this.postArr.push(this.post)
+      // Se utilizzo questo non posso eliminare subito dopo il post perchè non è ancora collegato al server con l'id
       this.getArr()
       this.post = {
         userId: 0,

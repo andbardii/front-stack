@@ -13,13 +13,6 @@
       "name": "Maria",
       "surname": "Bianchi",
       "id": 2
-    },
-    {
-      "email": "mariorossini@gmail.com",
-      "password": "$2a$10$ze4u1Twa4KkrI1LzKol9fezhKqHxumASWc5GA6mQNYoWKmJWeWUwG",
-      "name": "Mario",
-      "surname": "Rossi",
-      "id": 3
     }
   ],
   "posts": [
@@ -42,13 +35,6 @@
       "id": 13,
       "title": "$PEPE to the MOON",
       "url": "https://i.redd.it/fzyp5hwjsqxa1.jpg",
-      "liked": false
-    },
-    {
-      "userId": 1,
-      "id": 14,
-      "title": "Formentera",
-      "url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/10/2e/a4/ibiza.jpg?w=700&h=500&s=1",
       "liked": false
     },
     {

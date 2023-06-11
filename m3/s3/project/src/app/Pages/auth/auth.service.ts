@@ -65,6 +65,7 @@ export class AuthService {
       this.authSubject.next(null);
       console.log("Log Out di: " + (localStorage.getItem('user')))
       localStorage.removeItem('user');
+      localStorage.clear()
       this.router.navigate(['/auth','login']);
 
       if(this.authLogoutTimer){
