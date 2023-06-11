@@ -28,7 +28,7 @@
       "id": 12,
       "title": "Baby CZ",
       "url": "https://www.coindesk.com/resizer/IKD0a6yC_6jI8XB2jQxJe1TkJGc=/567x425/filters:quality(80):format(jpg)/cloudfront-us-east-1.images.arcpublishing.com/coindesk/DBNDM5UWFNDZRAWJ4W2FCTBVDQ.jpg",
-      "liked": false
+      "liked": true
     },
     {
       "userId": 1,
@@ -49,7 +49,7 @@
       "id": 15,
       "title": "Programming",
       "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/C_Hello_World_Program.png/357px-C_Hello_World_Program.png",
-      "liked": true
+      "liked": false
     },
     {
       "userId": 1,
@@ -70,7 +70,7 @@
       "id": 18,
       "title": "Epicode",
       "url": "https://s3-eu-west-1.amazonaws.com/tpd/logos/62a6277627ee655c1226b624/0x0.png",
-      "liked": false
+      "liked": true
     }
   ]
 }

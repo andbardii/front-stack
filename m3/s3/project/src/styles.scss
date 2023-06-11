@@ -1,4 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
-
-/* Importing Bootstrap SCSS file. */
+// BOOTSTRAP
 @import 'bootstrap/scss/bootstrap';
+
+// BUTTONS
+
+.btn-log{
+  &:hover{
+    background-color: #0B6EFD;
+    box-shadow: 0 0 10px #0B6EFD;
+    color: white;
+  }
+}
+

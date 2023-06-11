@@ -3,6 +3,5 @@ export interface Posts {
   id: number;
   title: string;
   url: string;
-  liked:boolean;
-
+  liked: boolean;
 }

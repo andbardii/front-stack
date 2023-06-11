@@ -1,6 +1,6 @@
 <div class="container-fluid py-5 px-5">
   <div class="row">
-    <div class="col-12">
+    <div class="col-12" *ngIf="createZone == true">
       <div class="form-signin w-100 m-auto py-5 text-center">
         <form>
           <h1 class="h3 mb-3 fw-normal">Crea un Nuovo Post</h1>
@@ -13,10 +13,12 @@
         </form>
       </div>
     </div>
-    <h3 class="col-12 text-center">CI SONO IN TUTTO <strong>{{postArr.length}} POST!</strong></h3>
-    <h3 class="col-12 text-center">HAI MESSO MI PIACE A <strong>{{likedArr.length}} POST!</strong></h3>
-    <div class="col-12 text-center">
-      <button class="btn btn-outline-primary fw-bold my-3" [routerLink]="['/home','liked']">GUARDA I POST CHE TI PIACCIONO</button>
+
+    <div class="col-12 text-center p-2">
+      <div class="rounded-3 border border-1 border-primary">
+        <button class="btn btn-outline-primary fw-bold m-3" (click)="createZone = !createZone">CREA UN NUOVO POST</button>
+        <button class="btn btn-outline-primary fw-bold m-3" [routerLink]="['/home','liked']">POST CHE TI PIACCIONO</button>
+      </div>
     </div>
 
     <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-2" *ngFor="let post of postArr">

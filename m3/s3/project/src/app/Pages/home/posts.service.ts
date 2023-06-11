@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Posts } from 'src/app/Model/posts';
+import { User } from 'src/app/Model/user';
 import { environment } from 'src/environments/environment.development';
 
 @Injectable({
@@ -24,7 +25,7 @@ export class PostsService {
     return this.http.post<Posts[]>(this.apiUrl, post)
   }
 
-  likeThis (post:Posts){
+   likeThis (post:Posts){
     post.liked = !post.liked
     return this.http.put<Posts>(this.apiUrl + '/' + post.id, post);
   }
