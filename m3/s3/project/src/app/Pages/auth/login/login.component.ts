@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { LoginData } from 'src/app/Model/logindata';
 import { AuthService } from '../auth.service';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -10,7 +10,8 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent {
   constructor(private authSvc: AuthService,
-              private router: Router){}
+              private router: Router,
+              ActivatedRoute:ActivatedRoute){}
 
   data:LoginData = {
     email: '',
@@ -21,7 +22,7 @@ export class LoginComponent {
     this.authSvc.userLogin(this.data)
     .subscribe(accessData => {
       console.log(`Sei loggato come ${accessData.user.name}`)
-      this.router.navigate(['/dashboard']);
+      this.router.navigate(['/dashboard', ActivatedRoute]);
     })
   }
 }
