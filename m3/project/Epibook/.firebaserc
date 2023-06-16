@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "epibooksocial"
+  },
+  "targets": {
+    "epibooksocial": {
+      "hosting": {
+        "Epibook": [
+          "epibooksocial"
+        ]
+      }
+    }
+  }
+}

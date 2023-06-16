@@ -1,0 +1,105 @@
+<div class="container-fluid h-100">
+  <div class="row h-100">
+    <app-navbar></app-navbar>
+    <div class="col-12 pt-5 h-100">
+      <div class="box main-container d-flex pt-4 h-100">
+        <!--================== PARTE SINISTRA ==================  -->
+        <div class="main-left col-3 d-none d-lg-inline">
+          <!-- .........BARRA SULLA SINISTRA.......... -->
+          <aside>
+            <a class="menu-item text-decoration-none" [routerLink]="['/dashboard']">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#6B4DE6" class="bi bi-house" viewBox="0 0 16 16">
+                  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+                </svg>
+              </span>
+              <h3 class="colorvio">Home</h3>
+            </a>
+            <a class="menu-item text-decoration-none" [routerLink]="['/dashboard', 'explore']">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#6B4DE6" class="bi bi-binoculars" viewBox="0 0 16 16">
+                  <path d="M3 2.5A1.5 1.5 0 0 1 4.5 1h1A1.5 1.5 0 0 1 7 2.5V5h2V2.5A1.5 1.5 0 0 1 10.5 1h1A1.5 1.5 0 0 1 13 2.5v2.382a.5.5 0 0 0 .276.447l.895.447A1.5 1.5 0 0 1 15 7.118V14.5a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 14.5v-3a.5.5 0 0 1 .146-.354l.854-.853V9.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v.793l.854.853A.5.5 0 0 1 7 11.5v3A1.5 1.5 0 0 1 5.5 16h-3A1.5 1.5 0 0 1 1 14.5V7.118a1.5 1.5 0 0 1 .83-1.342l.894-.447A.5.5 0 0 0 3 4.882V2.5zM4.5 2a.5.5 0 0 0-.5.5V3h2v-.5a.5.5 0 0 0-.5-.5h-1zM6 4H4v.882a1.5 1.5 0 0 1-.83 1.342l-.894.447A.5.5 0 0 0 2 7.118V13h4v-1.293l-.854-.853A.5.5 0 0 1 5 10.5v-1A1.5 1.5 0 0 1 6.5 8h3A1.5 1.5 0 0 1 11 9.5v1a.5.5 0 0 1-.146.354l-.854.853V13h4V7.118a.5.5 0 0 0-.276-.447l-.895-.447A1.5 1.5 0 0 1 12 4.882V4h-2v1.5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V4zm4-1h2v-.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5V3zm4 11h-4v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V14zm-8 0H2v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V14z"/>
+                </svg>
+              </span>
+              <h3 class="colorvio">Explore</h3>
+            </a>
+            <a class="menu-item text-decoration-none" [routerLink]="['/dashboard', 'profile']">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#6B4DE6" class="bi bi-person" viewBox="0 0 16 16">
+                  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                </svg>
+              </span>
+              <h3 class="colorvio">Profile</h3>
+            </a>
+            <a class="menu-item text-decoration-none" [routerLink]="['/dashboard', 'search']">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#6B4DE6" class="bi bi-search-heart-fill" viewBox="0 0 16 16">
+                  <path d="M6.5 13a6.474 6.474 0 0 0 3.845-1.258h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.008 1.008 0 0 0-.115-.1A6.471 6.471 0 0 0 13 6.5 6.502 6.502 0 0 0 6.5 0a6.5 6.5 0 1 0 0 13Zm0-8.518c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z"/>
+                </svg>
+              </span>
+              <h3 class="colorvio">Search</h3>
+            </a>
+            <a class="menu-item text-decoration-none" (click)="logout()">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#6B4DE6" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                  <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                </svg>
+              </span>
+              <h3 class="colorvio">Log out</h3>
+            </a>
+
+          </aside>
+          <!-- ..........FINE BARRA SINISTRA........... -->
+        </div>
+        <!--==================  Main Left End =================== -->
+
+        <!--================== Main Middle Start================== -->
+        <div class="main-middle h-100 col-12 col-lg-6">
+          <div class="middle-container h-100">
+            <!--.............. Feed Aria Start............... -->
+            <div class="feeds h-100">
+              <div class="feed h-100 col-12">
+                <div class="row h-100 pb-2">
+                  <p>qui vanno i post</p>
+                </div>
+              </div>
+            </div>
+            <!--.............. Feed Aria End............... -->
+          </div>
+        </div>
+        <!--================== Main Middle End==================  -->
+
+        <!--==================  Main Right Start==================  -->
+        <div class="main-right col-3 d-none d-lg-inline">
+          <!-- ..............Start Message............ -->
+
+          <div class="messages">
+            <!-- ....Message top..... -->
+            <div class="message-top">
+              <h4>Users</h4>
+            </div>
+
+
+            <!-- ......Message..... -->
+
+            <div class="message" *ngFor="let user of usersArr" [routerLink]="['/dashboard', 'account', user.username]">
+              <div class="profile-picture">
+                <img
+                  [src]="user.profilePic"
+                  alt="Profile Pic"
+                />
+              </div>
+              <div class="message-body">
+                <h5>{{user.username}}</h5>
+                <p class="text-gry">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- ..............End Message............ -->
+    </div>
+  </div>
+</div>

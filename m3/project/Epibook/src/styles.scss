@@ -1,0 +1,358 @@
+
+
+
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+}
+:root{
+  --first-color-hue: 252;
+  --color-dark-light-theme: 15%;
+  --color-light-light-theme: 92%;
+  --color-white-light-theme: 100%;
+
+  --color-white: hsl(0, 0%, var(--color-white-light-theme));
+  --color-light: hsl(252, 30%, var(--color-light-light-theme));
+  --color-first: hsl(var(--first-color-hue), 75%, 60%);
+
+  --border-radius: 0.6rem;
+  --card-border-radius: 1rem;
+  --button-padding: 0.6rem 2rem;
+  --search-padding: 0.6rem 1rem;
+  --card-padding: 1rem;
+}
+
+html, body{
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-dark);
+  background: var(--color-light);
+  overflow: hidden;
+  font-size: 16px;
+}
+
+/* ..............Style Generale del Sito............ */
+.box{
+  width: 90%;
+  margin: 0 auto;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+.author-pic{
+  border-radius: 100% ;
+  width: 2rem;
+  height: 2rem;
+  overflow: hidden;
+}
+
+.profile-picture{
+  width: 2.9rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile-picture:hover{
+  opacity: 0.75;
+}
+
+.button{
+  padding: var(--button-padding);
+  display: inline-block;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: 300ms ease all;
+}
+
+.button:hover{
+  opacity: 0.75;
+  font-weight: bold;
+}
+
+.button-first{
+  background: var(--color-first);
+  color: var(--color-white);
+}
+
+.text-bold{
+  font-weight: 500;
+}
+.text-gry{
+  color: var(--color-gray);
+}
+
+
+/* .................Inizio Parte del MAIN.................. */
+main{
+  position: relative;
+  top: 6rem;
+}
+.main-box{
+  display: grid;
+  grid-template-columns: 18vw auto 20vw;
+  position: relative;
+}
+
+/* ............INIZIO PARTE SINISTRA MAIN........... */
+
+aside{
+  margin-top: 1rem;
+  border-radius:var(--card-border-radius) ;
+  .menu-item{
+    padding: 1vh;
+  }
+}
+aside .menu-item{
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  position: relative;
+  cursor: pointer;
+  transition: 300ms ease all;
+  background: var(--color-white);
+}
+aside .menu-item:hover{
+  background: var(--color-light);
+}
+aside .menu-item span img{
+  width: 1.7rem;
+  margin-left: 2rem;
+  position: relative;
+}
+aside .notfy-counter{
+  background: var(--color-first);
+  color: var(--color-white);
+  width: fit-content;
+  font-size: 0.7rem;
+  border-radius: 30%;
+  padding: 0.1rem 0.4rem;
+  position: absolute;
+  top: 0.7rem;
+  left: 3.1rem;
+}
+
+
+aside .menu-item h3{
+  margin-left: 1.5rem;
+  font-size: 1rem;
+}
+
+aside .active{
+  background: var(--color-light);
+}
+aside .active h3{
+  color: var(--color-first);
+}
+
+/*PARTE DOVE CI TROVIAMO NELLA PAGINA*/
+aside .active::before{
+  content: '';
+  display: block;
+  width: 0.5rem;
+  height: 100%;
+  background: var(--color-first);
+}
+/* FINEPARTE DOVE CI TROVIAMO NELLA PAGINA fare con*/
+
+
+aside .menu-item:first-child{
+  overflow: hidden;
+  border-top-left-radius: var(--card-border-radius);
+  border-top-right-radius: var(--card-border-radius);
+}
+aside .menu-item:nth-last-child(1){
+  overflow: hidden;
+  border-bottom-left-radius: var(--card-border-radius);
+  border-bottom-right-radius: var(--card-border-radius);
+}
+.button-lg{
+  padding: 1rem 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* ............FINE DELLA PARTE SINISTRA DEL MAIN........... */
+
+
+/* ................PARTE CENTRALE MAINNNNN............... */
+
+/* ................CREA POST............... */
+.middle-box{
+  max-width: 700px !important;
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+.main-middle .add-post{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .4rem var(--card-padding);
+  border-radius: var(--border-radius);
+  background: var(--color-white);
+  margin-top: 1rem;
+}
+.main-middle .add-post input[type="text"]{
+  justify-self: flex-start;
+  width: 100%;
+  padding-left:1rem ;
+  background: transparent;
+  color: var(--color-dark);
+  margin-right: 1rem;
+}
+.main-middle .add-post .profile-picture{
+  width: 2.8rem;
+}
+
+/* ...........FINE CREAZIONE DEL POST.......... */
+
+/* ...............PARTE CENTRALE FINE DA IMPLEMENTARE COSE............... */
+
+
+/* ...............INIZIO MAIN PARTE DESTRAAAA............... */
+.main-right{
+  height: max-content;
+  position: sticky;
+  margin-top: 1rem; /*Modificare se inserisco storie */
+  bottom: 0;
+}
+
+/*............ AREA MESSAGGI.......... */
+.messages{
+  background: var(--color-white);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+}
+.message-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.messge-serch-bar{
+  display: flex;
+  background: var(--color-light);
+  border-radius: var(--border-radius);
+  padding: var(--search-padding);
+  gap: .5rem;
+  margin-bottom: 1rem;
+}
+.messge-serch-bar input[type="search"]{
+  background: transparent;
+  font-size: .9rem;
+  color: var(--color-dark);
+}
+.message-categories{
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.message-categories h6{
+  font-weight: bold;
+  width: 100%;
+  font-size: .85rem;
+  padding-bottom: .5rem;
+  border-bottom: 4px solid var(--color-light);
+  text-align: center;
+
+}
+.message-categories .active{
+  border-color: var(--color-first);
+}
+.message{
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: flex-start;
+}
+.message:last-child{
+  margin-bottom: 0;
+}
+.message p{
+  font-size: 0.8rem;
+}
+.message .profile-picture{
+  position: relative;
+  overflow: visible;
+  height: 2.6rem;
+  width: 2.6rem;
+}.message .profile-picture img{
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.message-request{
+  color: var(--color-first);
+}
+
+.feed{
+  overflow: scroll;
+}
+/* ====================Media Queryes======================= */
+/* .........MAX WIDTH(1200PX)..... */
+@media (max-width:1200px) {
+  .box{
+      width: 96%;
+  }
+  .main-box{
+      grid-template-columns:6rem auto 26vw;
+  }
+  .main-left{
+      width: 6rem;
+      z-index: 5;
+  }
+  .main-box .main-left .profile{
+      display: none;
+  }
+  aside h3{
+      display: none;
+  }
+  aside .button{
+      display: none;
+  }
+
+  /* .........MAX WIDTH(991px)..... */
+  @media (max-width:990px) {
+      nav .serch-bar{
+          display: none;
+      }
+      .main-box{
+          grid-template-columns: auto 0;
+      }
+      .main-right{
+          display: none;
+      }
+      .main-left{
+          right: 0;
+          top: 16%;
+          position: fixed;
+      }
+  }
+}
+
+
+
+
+/*------------ For small screens------------*/
+@media only screen and (max-width: 768px){
+}
+
+/* =====================FINE delle Media Queryes======================= */
+
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
