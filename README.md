@@ -1,2 +1,1 @@
-![Banner Repo Epicode](https://github.com/andbardii/fs0223-Andrea-Bardi/assets/126244632/0d0c653d-5c32-4a80-886b-03b86a9160a5)
-
+![Banner Repo Front Epicode](https://github.com/andbardii/fs0223-Andrea-Bardi/assets/126244632/b60ae0f0-d292-4cd8-bb31-3313b5126dae)
