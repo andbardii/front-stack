@@ -57,6 +57,7 @@ class Smartphone implements ISmartphone{
     }
     ricarica(euro: number): void {
         this.carica += euro
+        this.carica.toFixed(2)
         console.log("%cRICARICA DI " + euro + "€" + " EFFETTUATA CORRETTAMENTE","color: lightgreen")
     }
     numero404(): string {
@@ -70,7 +71,7 @@ class Smartphone implements ISmartphone{
         if(costoChiamata < this.carica){
             console.log("COSTO DELLA CHIAMATA: %c" + costoChiamata + "€","color: orange")
 
-            this.carica -= costoChiamata
+            this.carica = this.carica - costoChiamata
             this.numeroChiamate ++
             let now:Date = new Date()
             this.registroChiamate.push(new Chiamata(this.numeroChiamate, min, now))
@@ -79,6 +80,7 @@ class Smartphone implements ISmartphone{
             console.log("%cATTENZIONE CREDITO AZZERATO!","color: red")
 
             this.carica -= costoChiamata
+            this.carica.toFixed(2)
             this.numeroChiamate ++
             let now:Date = new Date()
             this.registroChiamate.push(new Chiamata(this.numeroChiamate, min, now))
