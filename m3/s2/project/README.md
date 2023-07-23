@@ -6,5 +6,5 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ### Start application
 
-Run `npm run server` for the server. Run `ng s -o` to run the app and open it. The application will automatically reload if you change any of the source files.
-
+Run `npm run server` for the server. 
+Run `ng s -o` to run the app and open it.
