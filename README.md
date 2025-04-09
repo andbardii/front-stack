@@ -1,8 +1,8 @@
 ![Banner Repo Front Epicode](https://github.com/andbardii/fs0223-Andrea-Bardi/assets/126244632/b60ae0f0-d292-4cd8-bb31-3313b5126dae)
 
-![Maintained](https://img.shields.io/badge/Maintained-No-red.svg?style=for-the-badge)
-![PRs Welcome](https://img.shields.io/badge/PRs-Not%20accepted-red.svg?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)
+[![License](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)
+[![Maintenance](https://img.shields.io/badge/Maintained-No-red)](https://github.com/andbardii/fs0223-Andrea-Bardi)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Not%20accepted-red)](https://github.com/andbardii/fs0223-Andrea-Bardi/pulls)
 
 ## Main technologies
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
